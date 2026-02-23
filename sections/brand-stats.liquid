@@ -1,12 +1,21 @@
 <link rel="stylesheet" href="{{ 'brand-stats.css' | asset_url }}">
 <div class="section brand-stats-parent">
   <div class="brand-stats-container">
-{}
+    {% for block in section.blocks %}
+      <div class="brand-stats-block">
+        <p>{{ block.settings.heading }}</p>
+        <p>{{ block.settings.subheading }}</p>
+        {% unless forloop.last %}
+          <hr>
+        {% endunless %}
+      </div>
+    {% endfor %}
   </div>
 </div>
 {% schema %}
 {
   "name": "Brand Stats",
+  
   "presets": [
     {
       "name": "Brand Stats"
