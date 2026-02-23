@@ -42,3 +42,13 @@
     display: flex;
     gap: 20px;
 }
+
+.home_top_banner-left-buttons-container a:first-of-type {
+    background: #000;
+    color: #fff;
+    font-family: 'Satoshi';
+    border-radius: 100px;
+    padding: 16px 70px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
