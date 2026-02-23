@@ -1,27 +1,7 @@
 <link rel="stylesheet" href="{{ 'brand-stats.css' | asset_url }}">
 <div class="section brand-stats-parent">
   <div class="brand-stats-container">
-    <div class="home_top_banner-left-container">
-      <h1>{{ section.settings.heading }}</h1>
-      <p>{{ section.settings.subheading }}</p>
-      <div class="home_top_banner-left-buttons-container">
-        <a href="{{ section.settings.primary_url }}">{{ section.settings.primary_button_text }}</a>
-        <a href="{{ section.settings.secondary_url }}">{{ section.settings.secondary_button_text }}</a>
-      </div>
-      <div class="home_top_banner-right-column1">
-        {% for block in section.blocks %}
-          <a href="{{ block.settings.url }}" class="home_top_banner-right-column1-block">
-            <img src="{{ block.settings.image |  image_url  }}">
-            <p>{{ block.settings.name }}</p>
-          </a>
-        {% endfor %}
-      </div>
-    </div>
-    <div class="home_top_banner-right-container">
-      <a class="home_top_banner-right-column2" href="{{ section.settings.right_image_url }}">
-        <img src="{{ section.settings.right_image | image_url  }}">
-      </a>
-    </div>
+{}
   </div>
 </div>
 {% schema %}
