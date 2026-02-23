@@ -53,7 +53,11 @@
     font-weight: 400;
 }
 
-.home_top_banner-left-buttons-container a:first-of-type {}
+.home_top_banner-left-buttons-container a:first-of-type:hover {
+    background: #fff;
+    color: #000;
+    border: solid 1px #000;
+}
 
 .home_top_banner-left-buttons-container a:last-of-type {
     background: #fff;
@@ -64,4 +68,5 @@
     padding: 16px 70px;
     font-size: 1.1rem;
     font-weight: 400;
+}
 }
