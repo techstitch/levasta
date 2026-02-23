@@ -1,4 +1,9 @@
-.brand-stats-parent{
+.brand-stats-parent {
     background: #000;
-    display: fe;
+}
+
+.brand-stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
