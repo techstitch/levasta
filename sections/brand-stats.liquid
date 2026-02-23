@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="{{ 'home-top__banner.css' | asset_url }}">
+<div class="section home_top_banner-container-parent">
+  <div class="home_top_banner-container">
+    <div class="home_top_banner-left-container">
+      <h1>{{ section.settings.heading }}</h1>
+      <p>{{ section.settings.subheading }}</p>
+      <div class="home_top_banner-left-buttons-container">
+        <a href="{{ section.settings.primary_url }}">{{ section.settings.primary_button_text }}</a>
+        <a href="{{ section.settings.secondary_url }}">{{ section.settings.secondary_button_text }}</a>
+      </div>
+      <div class="home_top_banner-right-column1">
+        {% for block in section.blocks %}
+          <a href="{{ block.settings.url }}" class="home_top_banner-right-column1-block">
+            <img src="{{ block.settings.image |  image_url  }}">
+            <p>{{ block.settings.name }}</p>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="home_top_banner-right-container">
+      <a class="home_top_banner-right-column2" href="{{ section.settings.right_image_url }}">
+        <img src="{{ section.settings.right_image | image_url  }}">
+      </a>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Home Top Banner",
+  "settings": [
+    {
+      "type": "richtext",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "text",
+      "label": "Subheading",
+      "id": "subheading"
+    },
+    {
+      "type": "text",
+      "label": "Primary Button Text",
+      "id": "primary_button_text"
+    },
+    {
+      "type": "url",
+      "label": "Primary Button URL",
+      "id": "primary_url"
+    },
+    {
+      "type": "text",
+      "label": "Secondary Button Text",
+      "id": "secondary_button_text"
+    },
+    {
+      "type": "url",
+      "label": "Secondary Button URL",
+      "id": "secondary_url"
+    },
+    {
+      "type": "image_picker",
+      "label": "Right Image",
+      "id": "right_image"
+    },
+    {
+      "type": "url",
+      "label": "Right Image URL",
+      "id": "right_image_url"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category Block",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Name",
+          "id": "name"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image"
+        },
+        {
+          "type": "url",
+          "label": "URL",
+          "id": "url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Stats"
+    }
+  ]
+}
+{% endschema %}
