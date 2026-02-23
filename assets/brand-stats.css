@@ -6,9 +6,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.brand-stats-container p{
+
+.brand-stats-container p {
     color: #fff;
     margin: 0;
     text-align: center;
+
 }
