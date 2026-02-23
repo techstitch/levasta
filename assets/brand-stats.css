@@ -1,4 +1,14 @@
-.brand-stats-parent{
-    background: #000;
-    display: fe;
+.brand-stats-parent {
+    background: #000 !important;
+}
+
+.brand-stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-stats-container p{
+    color: #fff;
+    margin: 0;
+    text-align: center;
 }
