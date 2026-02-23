@@ -8,8 +8,6 @@
         <a href="{{ section.settings.primary_url }}">{{ section.settings.primary_button_text }}</a>
         <a href="{{ section.settings.secondary_url }}">{{ section.settings.secondary_button_text }}</a>
       </div>
-    </div>
-    <div class="home_top_banner-right-container">
       <div class="home_top_banner-right-column1">
         {% for block in section.blocks %}
           <a href="{{ block.settings.url }}" class="home_top_banner-right-column1-block">
@@ -18,6 +16,8 @@
           </a>
         {% endfor %}
       </div>
+    </div>
+    <div class="home_top_banner-right-container">
       <a class="home_top_banner-right-column2" href="{{ section.settings.right_image_url }}">
         <img src="{{ section.settings.right_image | image_url  }}">
       </a>
