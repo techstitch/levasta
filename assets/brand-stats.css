@@ -1,9 +1,12 @@
 .brand-stats-parent {
-    background: #000;
+    background: #000 !important;
 }
 
 .brand-stats-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.brand-stats-container p{
+    color: #ff;
 }
