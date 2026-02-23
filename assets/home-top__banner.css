@@ -12,3 +12,7 @@
     flex-direction: column;
     width: 40%;
 }
+
+.home_top_banner-left-container h1 {
+    font-family: 'Integral', sans-serif;
+}
