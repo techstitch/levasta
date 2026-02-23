@@ -53,9 +53,43 @@
         "right_image": "shopify://shop_images/Group_6356142.png",
         "right_image_url": "shopify://collections/all"
       }
+    },
+    "brand_stats_tTVRwc": {
+      "type": "brand-stats",
+      "blocks": {
+        "stats_DqHQak": {
+          "type": "stats",
+          "settings": {
+            "heading": "200+",
+            "subheading": "Corporate Clients"
+          }
+        },
+        "stats_UDcHcL": {
+          "type": "stats",
+          "settings": {
+            "heading": "2,000+",
+            "subheading": "Ergonomic Chairs Delivered"
+          }
+        },
+        "stats_iEE6E4": {
+          "type": "stats",
+          "settings": {
+            "heading": "30,000+",
+            "subheading": "Hours of Comfortable Sitting"
+          }
+        }
+      },
+      "block_order": [
+        "stats_DqHQak",
+        "stats_UDcHcL",
+        "stats_iEE6E4"
+      ],
+      "name": "Brand Stats",
+      "settings": {}
     }
   },
   "order": [
-    "home_top_banner_rTVzDV"
+    "home_top_banner_rTVzDV",
+    "brand_stats_tTVRwc"
   ]
 }
