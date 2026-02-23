@@ -68,5 +68,10 @@
     padding: 16px 70px;
     font-size: 1.1rem;
     font-weight: 400;
+    transition: all .3s ease;
 }
+
+.home_top_banner-left-buttons-container a:last-of-type:hover {
+    background: #000;
+    color: #fff;
 }
