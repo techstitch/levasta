@@ -14,5 +14,10 @@
     color: #fff;
     margin: 0;
     text-align: center;
+}
 
+.brand-stats-block {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
