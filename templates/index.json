@@ -44,7 +44,7 @@
       ],
       "name": "Home Top Banner",
       "settings": {
-        "heading": "WORK SMART.\nSIT BETTER.",
+        "heading": "<h1>WORK SMART.</h1><h1>SIT BETTER.</h1>",
         "subheading": "Explore our premium collection of ergonomically engineered chairs, built for all day comfort, better posture, and serious productivity.",
         "primary_button_text": "Shop Now",
         "primary_url": "shopify://pages/contact",
