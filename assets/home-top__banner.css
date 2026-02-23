@@ -5,9 +5,11 @@
     justify-content: space-between;
     align-items: center;
 }
-.home_top_banner-container-parent{
+
+.home_top_banner-container-parent {
     background: #F2F0F1 !important;
 }
+
 .home_top_banner-left-container {
     display: flex;
     flex-direction: column;
@@ -16,6 +18,8 @@
 
 .home_top_banner-left-container h1 {
     font-family: 'Integral', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
 }
 
 .home_top_banner-right-container {
