@@ -35,3 +35,9 @@
     margin-top: -5px;
     font-weight: 300;
 }
+
+.brand-stats-container hr {
+    margin: 0;
+    height: 90%;
+    width: 1px;
+}
