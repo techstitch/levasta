@@ -52,12 +52,12 @@
     font-size: 1.1rem;
     font-weight: 400;
     transition: all .3s ease;
+    border: solid 1px #000;
 }
 
 .home_top_banner-left-buttons-container a:first-of-type:hover {
     background: #fff;
     color: #000;
-    border: solid 1px #000;
     transition: all .3s ease;
 }
 
