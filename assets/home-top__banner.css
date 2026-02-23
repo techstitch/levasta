@@ -86,7 +86,7 @@
 
 .home_top_banner-right-column1 {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     gap: 30px;
     width: 100%;
