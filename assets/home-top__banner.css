@@ -36,6 +36,7 @@
 .home_top_banner-right-container {
     display: flex;
     width: 50%;
+    gap: 70px;
 }
 
 .home_top_banner-left-buttons-container {
