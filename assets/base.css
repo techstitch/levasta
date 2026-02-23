@@ -768,7 +768,7 @@ p:empty {
 
 slideshow-component [data-placeholder='true'] * {
   cursor: grab;
-}
+}`
 
 /* Base text and heading styles */
 body,
