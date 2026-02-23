@@ -734,8 +734,10 @@ p:empty {
 }
 
 .svg-wrapper > svg {
-  width: var(--icon-size-sm);
-  height: var(--icon-size-sm);
+  /* width: var(--icon-size-sm);
+  height: var(--icon-size-sm); */
+  width: 2rem;
+  height: auto;
 }
 
 .relative {
