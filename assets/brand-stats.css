@@ -19,7 +19,7 @@
 .brand-stats-block {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 33%;
 }
 
 .brand-stats-block p:first-of-type {
