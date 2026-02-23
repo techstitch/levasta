@@ -1412,7 +1412,6 @@ input::placeholder {
 textarea:not(:placeholder-shown)::placeholder,
 input:not(:placeholder-shown)::placeholder {
   opacity: 0;
-  font-family: 'Satoshi', sans-serif;
 }
 
 /* The declaration above is messing with buttons that have an attribute of hidden as it overwrites the display value */
