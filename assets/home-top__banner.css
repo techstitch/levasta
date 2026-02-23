@@ -136,4 +136,11 @@
 .home_top_banner-right-column2 img {
     width: 100%;
     height: auto;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    will-change: transform;
+}
+
+.home_top_banner-right-column2:hover img {
+    transform: translateY(-8px) scale(1.02);
+    filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.18));
 }
