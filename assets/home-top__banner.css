@@ -90,7 +90,7 @@
 
 .home_top_banner-right-column1-block {
     position: relative;
-    width: 110px;
+    width: 150px;
 }
 
 .home_top_banner-right-column1-block img {
@@ -100,8 +100,13 @@
 
 .home_top_banner-right-column1-block p {
     position: absolute;
-    top: 50%;
+    bottom: 4px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     margin: 0;
+    color: #000;
+    font-family: 'Satoshi';
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
 }
