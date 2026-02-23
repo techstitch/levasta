@@ -52,3 +52,13 @@
     font-size: 1.1rem;
     font-weight: 400;
 }
+
+.home_top_banner-left-buttons-container a:last-of-type {
+    background: #000;
+    color: #fff;
+    font-family: 'Satoshi';
+    border-radius: 100px;
+    padding: 16px 70px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
