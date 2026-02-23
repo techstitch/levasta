@@ -16,3 +16,8 @@
 .home_top_banner-left-container h1 {
     font-family: 'Integral', sans-serif;
 }
+
+.home_top_banner-right-container {
+    display: flex;
+    width: 40%;
+}
