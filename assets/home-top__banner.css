@@ -139,6 +139,29 @@
     height: auto;
     transform-style: preserve-3d;
 }
+
 .home_top_banner-right-column2:hover img {
-    animation: floatLoop 3s ease-in-out infinite;
+    animation: floatLoop 3.5s ease-in-out infinite;
+}
+
+@keyframes floatLoop {
+    0% {
+        transform: translateY(0px) rotateX(0deg);
+    }
+
+    25% {
+        transform: translateY(-8px) rotateX(4deg);
+    }
+
+    50% {
+        transform: translateY(0px) rotateX(0deg);
+    }
+
+    75% {
+        transform: translateY(-8px) rotateX(4deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotateX(0deg);
+    }
 }
