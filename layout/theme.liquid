@@ -35,6 +35,55 @@
       {%- render 'theme-editor' -%}
     {% endif %}
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <style>
+            @font-face {
+        font-family: 'Integral';
+        src: url('{{ "Integralcf-200.otf" | asset_url }}') format('opentype');
+        font-weight: 200;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Integral';
+        src: url('{{ "Integralcf-300.otf" | asset_url }}') format('opentype');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Integral';
+        src: url('{{ "Integralcf-400.otf" | asset_url }}') format('opentype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Integral';
+        src: url('{{ "Integralcf-500.otf" | asset_url }}') format('opentype');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Integral';
+        src: url('{{ "Integralcf-600.otf" | asset_url }}') format('opentype');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: 'Integral';
+        src: url('{{ "Integralcf-700.otf" | asset_url }}') format('opentype');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
     {{ content_for_header }}
   </head>
 
