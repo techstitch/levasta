@@ -37,7 +37,7 @@
     width: 50%;
     gap: 70px;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
 }
 
 .home_top_banner-left-buttons-container {
@@ -119,7 +119,7 @@
 }
 
 .home_top_banner-right-column2 {
-    width: 65%;
+    width: 67%;
     height: auto;
 }
 
