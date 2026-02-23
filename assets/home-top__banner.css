@@ -150,7 +150,7 @@
     }
 
     25% {
-        transform: translateY(-8px) rotateX(4deg);
+        transform: translateY(-4px) rotateX(2deg);
     }
 
     50% {
@@ -158,7 +158,7 @@
     }
 
     75% {
-        transform: translateY(-8px) rotateX(4deg);
+        transform: translateY(-4px) rotateX(2deg);
     }
 
     100% {
