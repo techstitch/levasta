@@ -9,7 +9,13 @@
   </div>
   <div class="home_top_banner-right-container">
     <div class="home_top_banner-right-column1">
-        
+        {% for block in section.blocks %}
+            <div class="home_top_banner-right-column1-block">
+                <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.image.alt }}">
+                <h3>{{ block.settings.heading }}</h3>
+                <p>{{ block.settings.subheading }}</p>
+            </div>
+        {% endfor %}
     </div>
     <div class="home_top_banner-right-column2"></div>
   </div>
