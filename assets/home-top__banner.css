@@ -98,7 +98,7 @@
     height: 100%;
 }
 .home_top_banner-right-column1-block:hover{
-    transform: tr;
+    transform: translateY(-10px);
 }
 .home_top_banner-right-column1-block img {
     height: 100%;
