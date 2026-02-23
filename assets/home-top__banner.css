@@ -37,6 +37,8 @@
     display: flex;
     width: 50%;
     gap: 70px;
+    align-items: center;
+    justify-content: end;
 }
 
 .home_top_banner-left-buttons-container {
@@ -117,6 +119,7 @@
     width: 65%;
     height: auto;
 }
+
 .home_top_banner-right-column2 img {
     width: 100%;
     height: auto;
