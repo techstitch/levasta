@@ -5,10 +5,10 @@
       <div class="brand-stats-block">
         <p>{{ block.settings.heading }}</p>
         <p>{{ block.settings.subheading }}</p>
-        {% unless forloop.last %}
-          <hr>
-        {% endunless %}
       </div>
+      {% unless forloop.last %}
+        <hr>
+      {% endunless %}
     {% endfor %}
   </div>
 </div>
