@@ -10,15 +10,15 @@
   <div class="home_top_banner-right-container">
     <div class="home_top_banner-right-column1">
       {% for block in section.blocks %}
-        <a href="{{ block }}" class="home_top_banner-right-column1-block">
+        <a href="{{ block.settings.url }}" class="home_top_banner-right-column1-block">
           <img src="{{ block.settings.image }}">
           <p>{{ block.settings.name }}</p>
         </a>
       {% endfor %}
     </div>
-    <div class="home_top_banner-right-column2">
+    <a class="home_top_banner-right-column2" href="{{ section.settings.right_image_url }}">
       <img src="{{ section.settings.right_image }}">
-    </div>
+    </a>
   </div>
 </div>
 
