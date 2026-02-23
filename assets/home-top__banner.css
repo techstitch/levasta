@@ -17,9 +17,17 @@
 }
 
 .home_top_banner-left-container h1 {
-    font-family: 'Integral';
+    font-family: 'Integral', sans-serif;
     font-size: 4rem;
     font-weight: 500;
+    margin: 0;
+}
+
+.home_top_banner-left-container p {
+    font-family: 'Integral', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 0;
 }
 
 .home_top_banner-right-container {
