@@ -1,12 +1,13 @@
 .home_top_banner-container {
-    background: #F2F0F1 !important;
     padding-top: 80px;
     padding-bottom: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+.home_top_banner-container-parent{
+    background: #F2F0F1 !important;
+}
 .home_top_banner-left-container {
     display: flex;
     flex-direction: column;
