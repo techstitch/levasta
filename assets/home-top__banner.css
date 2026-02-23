@@ -86,11 +86,12 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    width: 30%;
 }
 
 .home_top_banner-right-column1-block {
     position: relative;
-    width: 120px;
+    width: 100%;
 }
 
 .home_top_banner-right-column1-block img {
@@ -116,7 +117,7 @@
     width: 65%;
     height: auto;
 }
-.home_top_banner-right-column2 {
+.home_top_banner-right-column2 img {
     width: 100%;
     height: auto;
 }
