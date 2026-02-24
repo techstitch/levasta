@@ -128,7 +128,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>Explore Our Products</h3>",
+                "text": "<h4>Explore Our Products</h4>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
