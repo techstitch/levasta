@@ -4279,6 +4279,10 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
   display: none;
 }
 
+.section-resource-list__header h4 {
+  font-weight: 500;
+}
+
 .section-resource-list.section--full-width product-card-link>.group-block,
 .section-carousel.section--full-width product-card-link>.group-block {
   @media screen and (max-width: 749px) {
