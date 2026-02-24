@@ -56,6 +56,8 @@
     "popover_border": "none",
     "currency_code_enabled_product_pages": false,
     "currency_code_enabled_product_cards": false,
+    "mobile_quick_add": false,
+    "show_second_image_on_hover": false,
     "product_corner_radius": 0,
     "card_corner_radius": 0,
     "card_title_case": "uppercase",
