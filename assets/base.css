@@ -1223,7 +1223,7 @@ results-list[initialized] {
   display: grid;
   height: 100%;
   border: solid 1px #000;
-  
+  border-radius: 12px;
 }
 
 /* Video background */
@@ -1708,6 +1708,7 @@ media-gallery.media-gallery--grid .media-gallery__grid .product-media-container 
 
 .product-media-container.media-fit {
   --product-media-fit: cover;
+  position: relative;
 
   img {
     object-fit: var(--product-media-fit);
