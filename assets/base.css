@@ -1103,7 +1103,8 @@ body:has(.header[transparent]) #header-group>*:not(.header-section) {
 .product-grid__card .product-media-container img {
   background-color: #fff;
   z-index: 1;
-  width: 77%;
+  width: 65%;
+  scale: 1.3;
   margin: 0 auto;
 }
 
