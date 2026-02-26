@@ -17,6 +17,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 1%;
+    margin-top: 45px;
 }
 
 .testimonial-slide {
