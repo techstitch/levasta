@@ -11,3 +11,11 @@
     text-align: center;
     margin: 0;
 }
+
+.home-testimonials-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px;
+}
