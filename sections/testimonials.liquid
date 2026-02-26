@@ -26,20 +26,28 @@
         </div>
       {% endfor %}
     </div>
-    
+
     <div class="testimonials-controls">
       <button class="slider-nav-btn slider-nav-prev" id="slider-prev">
-        <img src="https://cdn.shopify.com/s/files/1/0961/8086/3276/files/Group_1000001558_1.png?v=1772141969" alt="Previous" class="slider-arrow-icon slider-arrow-prev">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0961/8086/3276/files/Group_1000001558_1.png?v=1772141969"
+          alt="Previous"
+          class="slider-arrow-icon slider-arrow-prev"
+        >
       </button>
-      
+
       <div class="slider-indicators" id="slider-indicators">
         {% for block in section.blocks %}
           <button class="slider-dot {% if forloop.first %}active{% endif %}" data-index="{{ forloop.index0 }}"></button>
         {% endfor %}
       </div>
-      
+
       <button class="slider-nav-btn slider-nav-next" id="slider-next">
-        <img src="https://cdn.shopify.com/s/files/1/0961/8086/3276/files/Group_1000001558_1.png?v=1772141969" alt="Next" class="slider-arrow-icon">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0961/8086/3276/files/Group_1000001558_1.png?v=1772141969"
+          alt="Next"
+          class="slider-arrow-icon"
+        >
       </button>
     </div>
   </div>
