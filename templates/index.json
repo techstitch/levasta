@@ -471,10 +471,74 @@
             "author": "Rahul Sharma",
             "quote": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
           }
+        },
+        "testimonial_YXjUfT": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Rahul Sharma",
+            "quote": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "testimonial_D34E6A": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Rahul Sharma",
+            "quote": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "testimonial_wzmHfK": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Rahul Sharma",
+            "quote": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "testimonial_ptbmar": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Rahul Sharma",
+            "quote": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "testimonial_B3PDrm": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Rahul Sharma",
+            "quote": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "testimonial_HKUnjn": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Rahul Sharma",
+            "quote": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "testimonial_UkV964": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Rahul Sharma",
+            "quote": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "testimonial_4BxYNy": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Rahul Sharma",
+            "quote": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
         }
       },
       "block_order": [
-        "testimonial_aXmM6e"
+        "testimonial_aXmM6e",
+        "testimonial_YXjUfT",
+        "testimonial_D34E6A",
+        "testimonial_wzmHfK",
+        "testimonial_ptbmar",
+        "testimonial_B3PDrm",
+        "testimonial_HKUnjn",
+        "testimonial_UkV964",
+        "testimonial_4BxYNy"
       ],
       "name": "Home Testimonials",
       "settings": {}
