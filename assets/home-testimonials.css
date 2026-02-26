@@ -26,6 +26,6 @@
     background-color: #FFFFFF;
     border-radius: 12px;
     padding: 15px;
-    width: 300px;
+    min-width: 300px;
     scroll-snap-align: start;
 }
