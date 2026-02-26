@@ -36,3 +36,9 @@
     align-items: center;
     width: 100%;
 }
+
+.testimonial-slide-header-left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
