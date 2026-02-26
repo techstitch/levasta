@@ -4489,6 +4489,7 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 .product-card .layout-panel-flex--column>.group-block--height-fit {
   border: solid 1px #000;
   border-radius: 12px;
+  padding: 100px 15px 15px;
 }
 
 .layout-panel-flex--column>.group-block--height-fill {
