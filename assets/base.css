@@ -4485,7 +4485,9 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 .layout-panel-flex--column>.group-block--height-fit {
   flex: 0 1 auto;
 }
-
+.layout-panel-flex--column>.group-block--height-fit{
+  
+}
 .layout-panel-flex--column>.group-block--height-fill {
   flex: 1;
 }
