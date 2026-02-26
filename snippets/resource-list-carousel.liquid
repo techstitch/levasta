@@ -39,6 +39,8 @@
 <div
   class="swiper product-carousel-swiper"
   id="{{ slideshow_ref }}"
+  data-swiper-columns="{{ settings.columns | default: 4 }}"
+  data-swiper-gap="{{ settings.columns_gap | default: 20 }}"
   style="{{ gutter_style }} --slide-width-max: {{ slide_width_max | default: '300px' }};"
 >
   <div class="swiper-wrapper">
