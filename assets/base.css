@@ -1099,7 +1099,9 @@ body:has(.header[transparent]) #header-group>*:not(.header-section) {
     flex-direction: column;
   }
 }
-.product-grid__card .group-block 
+.product-grid__card .group-block a .text-block p{
+  
+}
 ul[product-grid-view='zoom-out'] .product-grid__card>* {
   display: none;
 }
