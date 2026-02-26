@@ -51,6 +51,8 @@
 .testimonial-stars-icon {
     width: 90px;
 }
-.testimonial-verified-icon{
-        width: 18px;
+
+.testimonial-verified-icon {
+    width: 18px;
+    margin-left: 3px;
 }
