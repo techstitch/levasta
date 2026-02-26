@@ -21,9 +21,7 @@ function initSwiper() {
       el: '#testimonials-pagination',
       clickable: true,
       dynamicBullets: false,
-      renderBullet: function() {
-        return '<button class="slider-dot"></button>';
-      },
+      type: 'bullets',
     },
     
     // Touch and mouse drag

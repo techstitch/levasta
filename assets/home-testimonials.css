@@ -155,27 +155,55 @@
     justify-content: center;
     align-items: center;
     position: static !important;
-    margin: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
 }
 
 .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #ddd;
-    border: none;
-    opacity: 1;
+    background-color: #ddd !important;
+    border: none !important;
+    opacity: 1 !important;
     cursor: pointer;
-    padding: 0;
-    transition: background-color 0.3s ease;
+    padding: 0 !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     margin: 0 !important;
+    flex-shrink: 0;
 }
 
 .swiper-pagination-bullet:hover {
-    background-color: #bbb;
+    background-color: #bbb !important;
+    transform: scale(1.1);
 }
 
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #000 !important;
+    width: 12px;
+    height: 12px;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.slider-dot:hover {
+    background-color: #bbb;
+    transform: scale(1.1);
+}
+
+.slider-dot.active {
     background-color: #000;
 }
 
