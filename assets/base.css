@@ -1099,9 +1099,14 @@ body:has(.header[transparent]) #header-group>*:not(.header-section) {
     flex-direction: column;
   }
 }
-.product-grid__card .product-media-container img{
+
+.product-grid__card .product-media-container img {
   background-color: #fff;
+  z-index: 1;
+  width: 77%;
+  margin: 0 auto;
 }
+
 .product-grid__card .group-block a .text-block p {
   color: #000;
   font-weight: 700;
