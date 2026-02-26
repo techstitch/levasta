@@ -461,11 +461,29 @@
         "padding-block-start": 50,
         "padding-block-end": 50
       }
+    },
+    "testimonials_8xnxBq": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_aXmM6e": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Rahul Sharma",
+            "quote": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_aXmM6e"
+      ],
+      "name": "Home Testimonials",
+      "settings": {}
     }
   },
   "order": [
     "home_top_banner_rTVzDV",
     "brand_stats_tTVRwc",
-    "product_list_AkyPea"
+    "product_list_AkyPea",
+    "testimonials_8xnxBq"
   ]
 }
