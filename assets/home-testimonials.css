@@ -175,7 +175,6 @@
 }
 
 .swiper-pagination-bullet:hover {
-    background-color: #bbb !important;
     transform: scale(1.1);
 }
 
