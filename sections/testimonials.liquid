@@ -13,7 +13,7 @@
             </div>
             <img class="testimonial-stars-icon" src="">
           </div>
-          <p class="testimonial-quote">"{{ block.settings.quote }}"</p>
+          <p class="testimonial-quote">{{ block.settings.quote }}</p>
         </div>
       {% endfor %}
     </div>
@@ -22,7 +22,9 @@
 {% schema %}
 {
   "name": "Home Testimonials",
-  "blocks": [],
+  "blocks": [
+    
+  ],
   "presets": [
     {
       "name": "Home Testimonials"
