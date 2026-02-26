@@ -30,16 +30,11 @@
     scroll-snap-align: start;
     border: solid 1px #000;
 }
+
 .testimonial-slide:first-of-type {
-    display: flex;
-    flex-direction: column;
-    background-color: #FFFFFF;
-    border-radius: 12px;
-    padding: 24px 28px;
-    min-width: 33%;
-    scroll-snap-align: start;
-    border: solid 1px #000;
+    margin-left: 1px;
 }
+
 .testimonial-slide-header {
     display: flex;
     justify-content: space-between;
