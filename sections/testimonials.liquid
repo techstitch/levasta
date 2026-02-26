@@ -2,7 +2,7 @@
 <div class="home-testimonials-container">
   <div class="section">
     <h2 class="home-testimonials-heading">What Our Customers Say</h2>
-    <div class="home-testimonials-slider">
+    <div class="home-testimonials-slider" id="testimonials-slider">
       {% for block in section.blocks %}
         <div class="testimonial-slide">
           <div class="testimonial-slide-header">
@@ -26,8 +26,26 @@
         </div>
       {% endfor %}
     </div>
+    
+    <div class="testimonials-controls">
+      <button class="slider-nav-btn slider-nav-prev" id="slider-prev">
+        <img src="https://cdn.shopify.com/s/files/1/0961/8086/3276/files/Group_1000001558_1.png?v=1772141969" alt="Previous" class="slider-arrow-icon slider-arrow-prev">
+      </button>
+      
+      <div class="slider-indicators" id="slider-indicators">
+        {% for block in section.blocks %}
+          <button class="slider-dot {% if forloop.first %}active{% endif %}" data-index="{{ forloop.index0 }}"></button>
+        {% endfor %}
+      </div>
+      
+      <button class="slider-nav-btn slider-nav-next" id="slider-next">
+        <img src="https://cdn.shopify.com/s/files/1/0961/8086/3276/files/Group_1000001558_1.png?v=1772141969" alt="Next" class="slider-arrow-icon">
+      </button>
+    </div>
   </div>
 </div>
+
+<script src="{{ 'home-testimonials.js' | asset_url }}" defer></script>
 {% schema %}
 {
   "name": "Home Testimonials",
