@@ -53,6 +53,13 @@
     infinite: false,
     initial_slide: 0,
     slide_count: slide_count,
-    slideshow_gutters: slideshow_gutters
+    slideshow_gutters: slideshow_gutters,
+    controls: ''
   %}
-</div>
+
+  {%- comment -%} add pagination dots below carousel using slideshow-controls snippet {%- endcomment -%}
+  {% if slide_count > 1 %}
+    <div class="resource-list-pagination">
+      {%- render 'slideshow-controls', style: 'dots', item_count: slide_count -%}
+    </div>
+  {% endif %}
