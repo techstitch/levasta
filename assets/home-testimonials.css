@@ -233,6 +233,17 @@
 }
 
 /* Product carousel controls and pagination to mirror testimonial layout */
+.product-carousel-swiper .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.product-carousel-swiper .swiper-slide {
+    display: flex;
+    align-items: stretch;
+    width: auto;
+}
+
 .product-carousel-controls {
     display: flex;
     justify-content: center;
