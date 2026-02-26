@@ -139,9 +139,12 @@
 }
 
 .slider-arrow-icon {
-    width: 24px;
-    height: 24px;
+    width: 45px;
+    height: auto;
     object-fit: contain;
+    background: #fff;
+    padding: 14px;
+    border-radius: 50%;
 }
 
 .slider-arrow-prev {
