@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const sliderWrapper = document.querySelector('.slider-wrapper');
   const slider = document.getElementById('testimonials-slider');
   const slides = document.querySelectorAll('.testimonial-slide');
-  const indicators = document.querySelectorAll('.slider-dot');
+  const indicatorsContainer = document.getElementById('slider-indicators');
   const prevBtn = document.getElementById('slider-prev');
   const nextBtn = document.getElementById('slider-next');
   
@@ -12,6 +12,17 @@ document.addEventListener('DOMContentLoaded', function() {
   const totalSlides = slides.length;
   const slidesToShow = 3;
   const maxIndex = Math.max(0, totalSlides - slidesToShow);
+  
+  // Create dots based on number of pages
+  const numDots = maxIndex + 1;
+  for (let i = 0; i < numDots; i++) {
+    const dot = document.createElement('button');
+    dot.className = `slider-dot ${i === 0 ? 'active' : ''}`;
+    dot.setAttribute('data-index', i);
+    indicatorsContainer.appendChild(dot);
+  }
+  
+  const indicators = document.querySelectorAll('.slider-dot');
   
   // Drag variables
   let isDragging = false;
@@ -34,9 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
     slider.style.transform = `translateX(${translateValue}%)`;
     
     // Update indicators
-    const indicatorIndex = Math.min(currentIndex, indicators.length - 1);
     indicators.forEach((dot, i) => {
-      dot.classList.toggle('active', i === indicatorIndex);
+      dot.classList.toggle('active', i === currentIndex);
     });
   }
   
@@ -72,6 +82,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const slideWidth = containerWidth / slidesToShow;
     
     dragOffset = (diffX / slideWidth) * (100 / slidesToShow);
+    
+    // Constrain drag offset to prevent going past boundaries
+    let minDragOffset = -maxIndex * (100 / slidesToShow);
+    let maxDragOffset = 0;
+    dragOffset = Math.max(minDragOffset, Math.min(maxDragOffset, dragOffset));
     
     const translateValue = (-currentIndex * (100 / slidesToShow)) + dragOffset;
     slider.classList.add('dragging');
