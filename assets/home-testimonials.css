@@ -61,3 +61,8 @@
     font-weight: 600;
     font-size: 1.1rem;
 }
+
+.testimonial-quote {
+    font-size: .9rem;
+    opacity: .6;
+}
