@@ -14,10 +14,9 @@
 
 .home-testimonials-slider {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     gap: 1%;
     margin-top: 45px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .testimonial-slide {
@@ -26,8 +25,8 @@
     background-color: #FFFFFF;
     border-radius: 12px;
     padding: 24px 28px;
-    min-width: 30%;
-    scroll-snap-align: start;
+    min-width: calc(30% - 0.67%);
+    flex-shrink: 0;
     border: solid 1px #000;
 }
 
@@ -70,4 +69,63 @@
 .testimonial-quote {
     font-size: .9rem;
     opacity: .6;
+}
+
+/* Slider Controls */
+.testimonials-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.slider-nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.slider-nav-btn:hover {
+    opacity: 0.7;
+}
+
+.slider-arrow-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.slider-arrow-prev {
+    transform: rotate(180deg);
+}
+
+.slider-indicators {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+.slider-dot.active {
+    background-color: #000;
+}
+
+.slider-dot:hover {
+    background-color: #bbb;
 }
