@@ -1,7 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
+function initSwiper() {
+  if (typeof Swiper === 'undefined') {
+    // Swiper not loaded yet, try again
+    setTimeout(initSwiper, 100);
+    return;
+  }
+
   const swiper = new Swiper('.testimonials-swiper', {
     // Slide configuration
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     spaceBetween: 20,
     
     // Navigation buttons
@@ -25,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
     touchRatio: 1.2,
     touchAngle: 45,
     simulateTouch: true,
-    touchEventsTarget: 'container',
     
     // Smooth animations
     speed: 500,
@@ -40,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Responsive breakpoints
     breakpoints: {
-      320: {
+      0: {
         slidesPerView: 1,
         spaceBetween: 15,
       },
@@ -64,6 +69,13 @@ document.addEventListener('DOMContentLoaded', function() {
     loop: false,
     rewind: true,
   });
-});
+}
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initSwiper);
+} else {
+  initSwiper();
+}
 
 
