@@ -30,46 +30,29 @@
 
 {% capture slides %}
   {% for item in slides limit: slides.size %}
-    {{ item }}
+    {% render 'slideshow-slide'
+      index : forloop.index0,
+      children : item,
+      class : 'resource-list__slide'
+    %}
   {% endfor %}
 {% endcapture %}
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
 <div
-  class="swiper product-carousel-swiper"
-  id="{{ slideshow_ref }}"
-  data-swiper-columns="{{ settings.columns | default: 4 }}"
-  data-swiper-gap="{{ settings.columns_gap | default: 20 }}"
+  class="resource-list__carousel"
   style="{{ gutter_style }} --slide-width-max: {{ slide_width_max | default: '300px' }};"
 >
-  <div class="swiper-wrapper">
-    {% for item in slides limit: slides.size %}
-      <div class="swiper-slide">
-        {{ item }}
-      </div>
-    {% endfor %}
-  </div>
-
-  <!-- navigation buttons and pagination -->
-  <div class="product-carousel-controls">
-    <button class="slider-nav-btn slider-nav-prev swiper-button-prev" aria-label="Previous">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0961/8086/3276/files/Group_1000001558_1.png?v=1772141969"
-        alt="Previous"
-        class="slider-arrow-icon slider-arrow-prev"
-      >
-    </button>
-    <div class="swiper-pagination"></div>
-    <button class="slider-nav-btn slider-nav-next swiper-button-next" aria-label="Next">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0961/8086/3276/files/Group_1000001558_1.png?v=1772141969"
-        alt="Next"
-        class="slider-arrow-icon"
-      >
-    </button>
-  </div>
+  {% render 'slideshow',
+    ref: slideshow_ref,
+    class: 'resource-list__carousel',
+    slides: slides,
+    show_arrows: show_arrows,
+    icon_style: settings.icons_style,
+    icon_shape: settings.icons_shape,
+    auto_hide_controls: false,
+    infinite: false,
+    initial_slide: 0,
+    slide_count: slide_count,
+    slideshow_gutters: slideshow_gutters
+  %}
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="{{ 'product-carousel.js' | asset_url }}" defer></script>
