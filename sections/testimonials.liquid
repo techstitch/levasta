@@ -39,9 +39,6 @@
       </button>
 
       <div class="slider-indicators" id="slider-indicators">
-        {% for block in section.blocks %}
-          <button class="slider-dot {% if forloop.first %}active{% endif %}" data-index="{{ forloop.index0 }}"></button>
-        {% endfor %}
       </div>
 
       <button class="slider-nav-btn slider-nav-next" id="slider-next">
