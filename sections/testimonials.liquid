@@ -1,6 +1,16 @@
 <link rel="stylesheet" href="{{ 'brand-stats.css' | asset_url }}">
 <div class="home-testimonials-container">
-    
+  <div class="section">
+    <h2 class="home-testimonials-heading">What Our Customers Say</h2>
+    <div class="home-testimonials-slider">
+      {% for block in section.blocks %}
+        <div class="testimonial-slide">
+          <p class="testimonial-quote">"{{ block.settings.quote }}"</p>
+          <p class="testimonial-author">- {{ block.settings.author }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 {% schema %}
 {
