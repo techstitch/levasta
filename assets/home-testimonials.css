@@ -207,20 +207,24 @@
     background-color: #000;
 }
 
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: fit-content !important;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .home-testimonials-heading {
         font-size: 1.5rem;
     }
-    
+
     .testimonials-controls {
         gap: 30px;
     }
-    
+
     .slider-nav-btn {
         padding: 6px;
     }
-    
+
     .slider-arrow-icon {
         width: 20px;
         height: 20px;
