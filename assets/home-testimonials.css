@@ -164,8 +164,8 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #ddd !important;
-    border: none !important;
+    background-color: transparent !important;
+    border: solid 1px #000 !important;
     opacity: 1 !important;
     cursor: pointer;
     padding: 0 !important;
