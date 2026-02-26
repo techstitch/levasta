@@ -17,4 +17,11 @@
 
     <button type="submit">Get Quote</button>
   </div>
+  {% if form.posted_successfully? %}
+    <p class="form-success">Thanks. We'll contact you soon.</p>
+  {% endif %}
+
+  {% if form.errors %}
+    {{ form.errors | default_errors }}
+  {% endif %}
 {% endform %}
