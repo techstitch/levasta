@@ -178,7 +178,7 @@
 }
 
 .swiper-pagination-bullet:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
