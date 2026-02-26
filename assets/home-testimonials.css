@@ -19,3 +19,8 @@
     gap: 20px;
     padding: 20px;
 }
+.testimonial-slide{
+        display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
