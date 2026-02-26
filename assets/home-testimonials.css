@@ -19,11 +19,13 @@
     gap: 20px;
     padding: 20px;
 }
-.testimonial-slide{
-        display: flex;
+
+.testimonial-slide {
+    display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
     border-radius: 12px;
     padding: 15px;
-    
+    width: 300px;
+    scroll-snap-align: start;
 }
