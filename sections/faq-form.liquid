@@ -24,6 +24,7 @@
 
     <!-- RIGHT SIDE FORM -->
     <div class="faq-right">
+      <img src="{{section.settings.image |  image_url }}">
       <h3 class="need-help-title">
         {{ section.settings.form_heading }}
       </h3>
@@ -101,6 +102,11 @@
       "id": "form_heading",
       "label": "Form Heading",
       "default": "Need Help?"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
     }
   ],
   "blocks": [
