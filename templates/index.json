@@ -542,12 +542,47 @@
       ],
       "name": "Home Testimonials",
       "settings": {}
+    },
+    "bulk_order_form_bymbLf": {
+      "type": "bulk-order-form",
+      "blocks": {
+        "chair_jRnV3g": {
+          "type": "chair",
+          "settings": {
+            "chair_type": "Low Back"
+          }
+        },
+        "chair_mxRU7U": {
+          "type": "chair",
+          "settings": {
+            "chair_type": "High Back"
+          }
+        },
+        "chair_9meCqP": {
+          "type": "chair",
+          "settings": {
+            "chair_type": "C Base"
+          }
+        }
+      },
+      "block_order": [
+        "chair_jRnV3g",
+        "chair_mxRU7U",
+        "chair_9meCqP"
+      ],
+      "name": "Bulk Order Form",
+      "settings": {
+        "heading": "Looking to Order in Bulk?",
+        "subtext": "Order in bulk from us with super competitive prices",
+        "whatsapp_link": ""
+      }
     }
   },
   "order": [
     "home_top_banner_rTVzDV",
     "brand_stats_tTVRwc",
     "product_list_AkyPea",
-    "testimonials_8xnxBq"
+    "testimonials_8xnxBq",
+    "bulk_order_form_bymbLf"
   ]
 }
