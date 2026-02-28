@@ -4,131 +4,38 @@
     <div class="bulk-order-left">
       <h2>{{ section.settings.heading }}</h2>
       <p class="bulk-subtext">{{ section.settings.subtext }}</p>
-
       {% form 'contact', id: 'BulkOrderForm', class: 'bulk-order-form' %}
         {% if form.posted_successfully? %}
           <p class="form-success">Thank you. We'll contact you shortly.</p>
         {% endif %}
-
         {% if form.errors %}
-          <div class="form-error">
-            {{ form.errors | default_errors }}
-          </div>
+          <div class="form-error">{{ form.errors | default_errors }}</div>
         {% endif %}
-
-        <div class="form-group">
-          <input
-            type="text"
-            name="contact[name]"
-            placeholder="Name *"
-            required
-          >
-        </div>
-
+        <div class="form-group"><input type="text" name="contact[name]" placeholder="Name *" required></div>
         <div class="form-row">
-          <input
-            type="tel"
-            name="contact[phone]"
-            placeholder="Phone *"
-            required
-          >
-
-          <input
-            type="email"
-            name="contact[email]"
-            placeholder="Mail *"
-            required
-          >
+          <input type="tel" name="contact[phone]" placeholder="Phone *" required>
+          <input type="email" name="contact[email]" placeholder="Mail *" required>
         </div>
-
         <div class="form-row">
           <select name="contact[Chair Type]" required>
             <option value="">Chair Type *</option>
             {% for block in section.blocks %}
-              <option value="{{ block.settings.chair_type }}">
-                {{ block.settings.chair_type }}
-              </option>
+              <option value="{{ block.settings.chair_type }}">{{ block.settings.chair_type }}</option>
             {% endfor %}
           </select>
-
-          <input
-            type="number"
-            name="contact[Quantity]"
-            placeholder="Quantity *"
-            min="1"
-            required
-          >
+          <input type="number" name="contact[Quantity]" placeholder="Quantity *" min="1" required>
         </div>
-
         <div class="form-buttons">
           <button type="submit" class="primary-btn">Get Quote</button>
-
-          <a
-            href="{{ section.settings.whatsapp_link }}"
-            target="_blank"
-            class="whatsapp-btn"
-          >
-            WhatsApp Us
-          </a>
+          <a href="{{ section.settings.whatsapp_link }}" target="_blank" class="whatsapp-btn"> WhatsApp Us </a>
         </div>
       {% endform %}
     </div>
-
     <div class="bulk-order-right">
       {% if section.settings.image != blank %}
-        <img
-          src="{{ section.settings.image | image_url: width: 800 }}"
-          alt="Bulk Order"
-          loading="lazy"
-        >
+        <img src="{{ section.settings.image | image_url: width: 800 }}" alt="Bulk Order" loading="lazy">
       {% endif %}
     </div>
   </div>
 </div>
-{% schema %}
-{
-  "name": "Bulk Order Form",
-  "settings": [
-    {
-      "type": "richtext",
-      "id": "heading",
-      "label": "Heading"
-    },
-    {
-      "type": "text",
-      "id": "subtext",
-      "label": "Subtext",
-      "default": "Order in bulk from us with super competitive prices"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Right Image"
-    },
-    {
-      "type": "url",
-      "id": "whatsapp_link",
-      "label": "WhatsApp Link"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "chair",
-      "name": "Chair Type",
-      "settings": [
-        {
-          "type": "text",
-          "id": "chair_type",
-          "label": "Chair Name"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Bulk Order Form"
-    }
-  ]
-}
-{% endschema %}
-  
+{% schema %} { "name": "Bulk Order Form", "settings": [ { "type": "richtext", "id": "heading", "label": "Heading" }, { "type": "text", "id": "subtext", "label": "Subtext", "default": "Order in bulk from us with super competitive prices" }, { "type": "image_picker", "id": "image", "label": "Right Image" }, { "type": "url", "id": "whatsapp_link", "label": "WhatsApp Link" } ], "blocks": [ { "type": "chair", "name": "Chair Type", "settings": [ { "type": "text", "id": "chair_type", "label": "Chair Name" } ] } ], "presets": [ { "name": "Bulk Order Form" } ] } {% endschema %}
