@@ -1,61 +1,126 @@
 <link rel="stylesheet" href="{{ 'faq-form.css' | asset_url }}">
+
 <div class="section faq-form-section">
-  <h2>{{ section.settings.heading }}</h2>
-  <div class="faq-form-right">
-    <p class="bulk-subtext">{{ section.settings.subtext }}</p>
-    {% form 'contact', id: 'NeedHelpForm', class: 'need-help-form' %}
-      {% if form.posted_successfully? and form.id == 'NeedHelpForm' %}
-        <p class="form-success">Message sent successfully.</p>
-      {% endif %}
+  <h2 class="faq-heading">
+    {{ section.settings.heading }}
+  </h2>
 
-      {% if form.errors %}
-        <div class="form-error">{{ form.errors | default_errors }}</div>
-      {% endif %}
+  <div class="faq-grid">
+    <!-- LEFT SIDE FAQ -->
+    <div class="faq-left">
+      {% for block in section.blocks %}
+        <div class="faq-item">
+          <button class="faq-question">
+            {{ block.settings.question }}
+            <span class="faq-toggle">+</span>
+          </button>
 
-      <div class="form-group">
-        <input
-          type="text"
-          name="contact[name]"
-          placeholder="Name *"
-          required
-        >
-      </div>
+          <div class="faq-answer">
+            <p>{{ block.settings.answer }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
 
-      <div class="form-row">
-        <input
-          type="tel"
-          name="contact[phone]"
-          placeholder="Phone *"
-          required
-        >
+    <!-- RIGHT SIDE FORM -->
+    <div class="faq-right">
+      <h3 class="need-help-title">
+        {{ section.settings.form_heading }}
+      </h3>
 
-        <input
-          type="email"
-          name="contact[email]"
-          placeholder="Mail *"
-          required
-        >
-      </div>
+      {% form 'contact', id: 'NeedHelpForm', class: 'need-help-form' %}
+        <input type="hidden" name="contact[Form Type]" value="Need Help">
 
-      <div class="form-group">
-        <textarea
-          name="contact[Message]"
-          placeholder="Describe your concern *"
-          rows="4"
-          required
-        >
-        </textarea>
-      </div>
+        {% if form.posted_successfully? and form.id == 'NeedHelpForm' %}
+          <p class="form-success">Message sent successfully.</p>
+        {% endif %}
 
-      <div class="form-group">
+        {% if form.errors %}
+          <div class="form-error">{{ form.errors | default_errors }}</div>
+        {% endif %}
+
+        <div class="form-group">
+          <input type="text" name="contact[name]" placeholder="Name *" required>
+        </div>
+
+        <div class="form-row">
+          <input type="tel" name="contact[phone]" placeholder="Phone *" required>
+          <input type="email" name="contact[email]" placeholder="Mail *" required>
+        </div>
+
+        <div class="form-group">
+          <textarea name="contact[Message]" placeholder="Describe your concern *" rows="4" required></textarea>
+        </div>
+
         <button type="submit" class="primary-btn">Send</button>
-      </div>
-    {% endform %}
+      {% endform %}
+    </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const items = document.querySelectorAll('.faq-item');
+
+    items.forEach((item) => {
+      const btn = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+      const toggle = item.querySelector('.faq-toggle');
+
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('active');
+
+        document.querySelectorAll('.faq-item').forEach((i) => {
+          i.classList.remove('active');
+          i.querySelector('.faq-answer').style.maxHeight = null;
+          i.querySelector('.faq-toggle').innerText = '+';
+        });
+
+        if (!isOpen) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          toggle.innerText = '−';
+        }
+      });
+    });
+  });
+</script>
+
 {% schema %}
 {
   "name": "FAQ Form",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "Frequently Asked Questions"
+    },
+    {
+      "type": "text",
+      "id": "form_heading",
+      "label": "Form Heading",
+      "default": "Need Help?"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "FAQ Form"
