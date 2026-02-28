@@ -38,4 +38,27 @@
     </div>
   </div>
 </div>
-{% schema %} { "name": "Bulk Order Form", "settings": [ { "type": "richtext", "id": "heading", "label": "Heading" }, { "type": "text", "id": "subtext", "label": "Subtext", "default": "Order in bulk from us with super competitive prices" }, { "type": "image_picker", "id": "image", "label": "Right Image" }, { "type": "url", "id": "whatsapp_link", "label": "WhatsApp Link" } ], "blocks": [ { "type": "chair", "name": "Chair Type", "settings": [ { "type": "text", "id": "chair_type", "label": "Chair Name" } ] } ], "presets": [ { "name": "Bulk Order Form" } ] } {% endschema %}
+{% schema %}
+{
+  "name": "Bulk Order Form",
+  "settings": [
+    { "type": "richtext", "id": "heading", "label": "Heading" },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Order in bulk from us with super competitive prices"
+    },
+    { "type": "image_picker", "id": "image", "label": "Right Image" },
+    { "type": "url", "id": "whatsapp_link", "label": "WhatsApp Link" }
+  ],
+  "blocks": [
+    {
+      "type": "chair",
+      "name": "Chair Type",
+      "settings": [{ "type": "text", "id": "chair_type", "label": "Chair Name" }]
+    }
+  ],
+  "presets": [{ "name": "Bulk Order Form" }]
+}
+{% endschema %}
