@@ -37,6 +37,11 @@
     color: #000;
 }
 
+.faq-question span {
+    font-size: 1.6rem;
+    line-height: .4;
+}
+
 .faq-answer {
     overflow: hidden;
     max-height: 0;
