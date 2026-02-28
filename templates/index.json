@@ -577,6 +577,123 @@
         "image": "shopify://shop_images/7_1.jpg",
         "whatsapp_link": "shopify://products/c-base-mid-back-office-chair-ergonomic-durable-versatile-1"
       }
+    },
+    "faq_form_yRbMzx": {
+      "type": "faq-form",
+      "blocks": {
+        "faq_gHhkAq": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_aTBQ36": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_qX7NK7": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_ttqgHe": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_d9kJRj": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_9wqQmG": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_GnAQbT": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_caYeHw": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_rThA7g": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_fEhhBQ": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_ihG8gK": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_eNzVPM": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_DibG9x": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        }
+      },
+      "block_order": [
+        "faq_gHhkAq",
+        "faq_aTBQ36",
+        "faq_qX7NK7",
+        "faq_ttqgHe",
+        "faq_d9kJRj",
+        "faq_9wqQmG",
+        "faq_GnAQbT",
+        "faq_caYeHw",
+        "faq_rThA7g",
+        "faq_fEhhBQ",
+        "faq_ihG8gK",
+        "faq_eNzVPM",
+        "faq_DibG9x"
+      ],
+      "name": "FAQ Form",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "form_heading": "Need Help?",
+        "image": "shopify://shop_images/Group_1000001535.png"
+      }
     }
   },
   "order": [
@@ -584,6 +701,7 @@
     "brand_stats_tTVRwc",
     "product_list_AkyPea",
     "testimonials_8xnxBq",
-    "bulk_order_form_bymbLf"
+    "bulk_order_form_bymbLf",
+    "faq_form_yRbMzx"
   ]
 }
