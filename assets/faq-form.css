@@ -23,6 +23,12 @@
     overflow: hidden;
 }
 
+.faq-right img {
+    width: 40%;
+    height: auto;
+    margin: 0 auto 40px;
+}
+
 .faq-question {
     width: 100%;
     background: #f7f7f7;
