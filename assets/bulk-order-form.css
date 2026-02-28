@@ -18,8 +18,10 @@
 }
 
 .bulk-order-left h2 {
-    font-size: 32px;
+    font-size: 2rem;
     margin-bottom: 10px;
+    font-family: 'Satoshi';
+    font-weight: 400;
 }
 
 .bulk-subtext {
