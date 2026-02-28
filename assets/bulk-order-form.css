@@ -157,30 +157,34 @@
     z-index: 999;
 }
 
+/* Clean integrated phone style */
+
+.phone-wrapper {
+    position: relative;
+}
+
 .iti {
     width: 100%;
-    position: relative;
-    z-index: 9999;
+}
+
+.iti input {
+    padding-left: 60px !important;
 }
 
 .iti__flag-container {
-    z-index: 10000;
+    left: 14px !important;
+}
+
+.iti__selected-flag {
+    padding: 0 8px !important;
+    border-radius: 12px;
 }
 
 .iti__country-list {
-    z-index: 100000 !important;
-    position: absolute !important;
-    max-height: 260px;
-    overflow-y: auto;
-    border-radius: 14px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-    background: #fff;
-    list-style: none !important;
-    padding-left: 0 !important;
-}
-
-.iti__country-list li {
-    list-style: none !important;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    z-index: 999999 !important;
 }
 
 /* ========================= */
