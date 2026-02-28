@@ -651,7 +651,8 @@
       "name": "FAQ Form",
       "settings": {
         "heading": "Frequently Asked Questions",
-        "form_heading": "Need Help?"
+        "form_heading": "Need Help?",
+        "image": "shopify://shop_images/Group_1000001535.png"
       }
     }
   },
