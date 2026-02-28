@@ -1,3 +1,5 @@
+.bulk-order-section {
+    padding: 60px 20px;
 }
 
 .bulk-order-container {
@@ -48,6 +50,12 @@
     display: flex;
     gap: 15px;
     margin-top: 10px;
+}
+
+.form-buttons span {
+    align-self: center;
+    color: #000;
+    font-weight: 500;
 }
 
 .primary-btn {
