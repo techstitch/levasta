@@ -3,13 +3,11 @@
 
 <div class="section bulk-order-section">
   <div class="bulk-order-container">
-
     <div class="bulk-order-left">
       <h2>{{ section.settings.heading }}</h2>
       <p class="bulk-subtext">{{ section.settings.subtext }}</p>
 
       {% form 'contact', id: 'BulkOrderForm', class: 'bulk-order-form' %}
-
         {% if form.posted_successfully? %}
           <p class="form-success">Thank you. We'll contact you shortly.</p>
         {% endif %}
@@ -26,7 +24,6 @@
         </div>
 
         <div class="form-row">
-
           <div class="floating-group phone-wrapper">
             <input type="tel" id="phone" name="contact[phone]" required placeholder=" ">
             <label>Phone *</label>
@@ -36,11 +33,9 @@
             <input type="email" name="contact[email]" required placeholder=" ">
             <label>Email *</label>
           </div>
-
         </div>
 
         <div class="form-row">
-
           <div class="floating-group">
             <select name="contact[Chair Type]" required>
               <option value="" disabled selected></option>
@@ -57,16 +52,12 @@
             <input type="number" name="contact[Quantity]" min="1" required placeholder=" ">
             <label>Quantity *</label>
           </div>
-
         </div>
 
         <div class="form-buttons">
           <button type="submit" class="primary-btn">Get Quote</button>
-          <a href="{{ section.settings.whatsapp_link }}" target="_blank" class="whatsapp-btn">
-            WhatsApp Us
-          </a>
+          <a href="{{ section.settings.whatsapp_link }}" target="_blank" class="whatsapp-btn"> WhatsApp Us </a>
         </div>
-
       {% endform %}
     </div>
 
@@ -79,34 +70,28 @@
         >
       {% endif %}
     </div>
-
   </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/js/intlTelInput.min.js"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    const input = document.querySelector('#phone');
 
-  const phoneInput = document.querySelector("#phone");
+    if (input) {
+      const iti = window.intlTelInput(input, {
+        initialCountry: 'in',
+        preferredCountries: ['in', 'ae', 'us', 'uk'],
+        nationalMode: false,
+        separateDialCode: false,
+        autoHideDialCode: false,
+        utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/js/utils.js',
+      });
+    }
 
-  if (phoneInput) {
-    window.intlTelInput(phoneInput, {
-      initialCountry: "auto",
-      separateDialCode: true,
-      preferredCountries: ["in", "ae", "us", "uk"],
-      geoIpLookup: function(callback) {
-        fetch("https://ipapi.co/json")
-          .then(res => res.json())
-          .then(data => callback(data.country_code))
-          .catch(() => callback("in"));
-      }
-    });
-  }
-
-  document.querySelector(".bulk-order-container").classList.add("reveal");
-
-});
+    document.querySelector('.bulk-order-container').classList.add('reveal');
+  });
 </script>
 
 {% schema %}
