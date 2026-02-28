@@ -580,8 +580,79 @@
     },
     "faq_form_yRbMzx": {
       "type": "faq-form",
+      "blocks": {
+        "faq_gHhkAq": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_GnAQbT": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_caYeHw": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_rThA7g": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_fEhhBQ": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_ihG8gK": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_eNzVPM": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        },
+        "faq_DibG9x": {
+          "type": "faq",
+          "settings": {
+            "question": "How long until we deliver your first blog post?",
+            "answer": "“My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one. My recliner stopped working and I thought it was done. They fixed it quickly. Saved me from buying a new one.”"
+          }
+        }
+      },
+      "block_order": [
+        "faq_gHhkAq",
+        "faq_GnAQbT",
+        "faq_caYeHw",
+        "faq_rThA7g",
+        "faq_fEhhBQ",
+        "faq_ihG8gK",
+        "faq_eNzVPM",
+        "faq_DibG9x"
+      ],
       "name": "FAQ Form",
-      "settings": {}
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "form_heading": "Need Help?"
+      }
     }
   },
   "order": [
