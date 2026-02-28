@@ -63,15 +63,22 @@
   document.addEventListener('DOMContentLoaded', function () {
     const items = document.querySelectorAll('.faq-item');
 
-    items.forEach((item) => {
+    items.forEach((item, index) => {
       const btn = item.querySelector('.faq-question');
       const answer = item.querySelector('.faq-answer');
       const toggle = item.querySelector('.faq-toggle');
 
+      // 👉 Open first FAQ by default
+      if (index === 0) {
+        item.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        toggle.innerText = '−';
+      }
+
       btn.addEventListener('click', () => {
         const isOpen = item.classList.contains('active');
 
-        document.querySelectorAll('.faq-item').forEach((i) => {
+        items.forEach((i) => {
           i.classList.remove('active');
           i.querySelector('.faq-answer').style.maxHeight = null;
           i.querySelector('.faq-toggle').innerText = '+';
@@ -86,7 +93,6 @@
     });
   });
 </script>
-
 {% schema %}
 {
   "name": "FAQ Form",
