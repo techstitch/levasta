@@ -4,7 +4,10 @@
 
 .faq-heading {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
+    font-family: 'Satoshi';
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 .faq-grid {
