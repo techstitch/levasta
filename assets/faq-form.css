@@ -45,7 +45,10 @@
 }
 
 .faq-answer p {
-    padding: 15px 0;
+    padding: 0 0 15px;
+    font-size: .95rem;
+    font-weight: 500;
+    opacity: .8;
 }
 
 .need-help-form input,
