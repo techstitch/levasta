@@ -9,7 +9,7 @@
     <!-- LEFT SIDE FAQ -->
     <div class="faq-left">
       {% for block in section.blocks %}
-        <div class="faq-item">
+        <div class="faq-item {% if forloop.first %}active{% endif %} ">
           <button class="faq-question">
             {{ block.settings.question }}
             <span class="faq-toggle">+</span>
