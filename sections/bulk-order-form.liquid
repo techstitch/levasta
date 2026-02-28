@@ -1,11 +1,15 @@
 <link rel="stylesheet" href="{{ 'bulk-order-form.css' | asset_url }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/css/intlTelInput.min.css">
+
 <div class="section bulk-order-section">
   <div class="bulk-order-container">
+
     <div class="bulk-order-left">
       <h2>{{ section.settings.heading }}</h2>
       <p class="bulk-subtext">{{ section.settings.subtext }}</p>
 
       {% form 'contact', id: 'BulkOrderForm', class: 'bulk-order-form' %}
+
         {% if form.posted_successfully? %}
           <p class="form-success">Thank you. We'll contact you shortly.</p>
         {% endif %}
@@ -16,75 +20,95 @@
           </div>
         {% endif %}
 
-        <div class="form-group">
-          <input
-            type="text"
-            name="contact[name]"
-            placeholder="Name *"
-            required
-          >
+        <div class="floating-group">
+          <input type="text" name="contact[name]" required placeholder=" ">
+          <label>Name *</label>
         </div>
 
         <div class="form-row">
-          <input
-            type="tel"
-            name="contact[phone]"
-            placeholder="Phone *"
-            required
-          >
 
-          <input
-            type="email"
-            name="contact[email]"
-            placeholder="Mail *"
-            required
-          >
+          <div class="floating-group phone-wrapper">
+            <input type="tel" id="phone" name="contact[phone]" required placeholder=" ">
+            <label>Phone *</label>
+          </div>
+
+          <div class="floating-group">
+            <input type="email" name="contact[email]" required placeholder=" ">
+            <label>Email *</label>
+          </div>
+
         </div>
 
         <div class="form-row">
-          <select name="contact[Chair Type]" required>
-            <option value="">Chair Type *</option>
-            {% for block in section.blocks %}
-              <option value="{{ block.settings.chair_type }}">
-                {{ block.settings.chair_type }}
-              </option>
-            {% endfor %}
-          </select>
 
-          <input
-            type="number"
-            name="contact[Quantity]"
-            placeholder="Quantity *"
-            min="1"
-            required
-          >
+          <div class="floating-group">
+            <select name="contact[Chair Type]" required>
+              <option value="" disabled selected></option>
+              {% for block in section.blocks %}
+                <option value="{{ block.settings.chair_type }}">
+                  {{ block.settings.chair_type }}
+                </option>
+              {% endfor %}
+            </select>
+            <label>Chair Type *</label>
+          </div>
+
+          <div class="floating-group">
+            <input type="number" name="contact[Quantity]" min="1" required placeholder=" ">
+            <label>Quantity *</label>
+          </div>
+
         </div>
 
         <div class="form-buttons">
           <button type="submit" class="primary-btn">Get Quote</button>
-
-          <a
-            href="{{ section.settings.whatsapp_link }}"
-            target="_blank"
-            class="whatsapp-btn"
-          >
+          <a href="{{ section.settings.whatsapp_link }}" target="_blank" class="whatsapp-btn">
             WhatsApp Us
           </a>
         </div>
+
       {% endform %}
     </div>
 
     <div class="bulk-order-right">
       {% if section.settings.image != blank %}
         <img
-          src="{{ section.settings.image | image_url: width: 800 }}"
+          src="{{ section.settings.image | image_url: width: 1000 }}"
           alt="Bulk Order"
           loading="lazy"
         >
       {% endif %}
     </div>
+
   </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.21/js/intlTelInput.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const phoneInput = document.querySelector("#phone");
+
+  if (phoneInput) {
+    window.intlTelInput(phoneInput, {
+      initialCountry: "auto",
+      separateDialCode: true,
+      preferredCountries: ["in", "ae", "us", "uk"],
+      geoIpLookup: function(callback) {
+        fetch("https://ipapi.co/json")
+          .then(res => res.json())
+          .then(data => callback(data.country_code))
+          .catch(() => callback("in"));
+      }
+    });
+  }
+
+  document.querySelector(".bulk-order-container").classList.add("reveal");
+
+});
+</script>
+
 {% schema %}
 {
   "name": "Bulk Order Form",
