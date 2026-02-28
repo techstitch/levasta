@@ -572,7 +572,7 @@
       ],
       "name": "Bulk Order Form",
       "settings": {
-        "heading": "Looking to Order in Bulk?",
+        "heading": "<p>Looking to <strong>Order in Bulk?</strong></p>",
         "subtext": "Order in bulk from us with super competitive prices",
         "image": "shopify://shop_images/7_1.jpg",
         "whatsapp_link": "shopify://products/c-base-mid-back-office-chair-ergonomic-durable-versatile-1"
