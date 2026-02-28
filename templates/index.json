@@ -577,6 +577,11 @@
         "image": "shopify://shop_images/7_1.jpg",
         "whatsapp_link": "shopify://products/c-base-mid-back-office-chair-ergonomic-durable-versatile-1"
       }
+    },
+    "faq_form_yRbMzx": {
+      "type": "faq-form",
+      "name": "FAQ Form",
+      "settings": {}
     }
   },
   "order": [
@@ -584,6 +589,7 @@
     "brand_stats_tTVRwc",
     "product_list_AkyPea",
     "testimonials_8xnxBq",
-    "bulk_order_form_bymbLf"
+    "bulk_order_form_bymbLf",
+    "faq_form_yRbMzx"
   ]
 }
