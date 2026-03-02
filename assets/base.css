@@ -2195,6 +2195,10 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 
   &.swatch--variant-image {
     background-size: cover;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #000;
+    border-radius: 6px;
   }
 
   @media screen and (min-width: 750px) {
@@ -4041,9 +4045,9 @@ slideshow-slide {
     content-visibility: visible;
   }
 
-  slideshow-component slideshow-slide:not([aria-hidden='false']) {
+  /* slideshow-component slideshow-slide:not([aria-hidden='false']) {
     content-visibility: hidden;
-  }
+  } */
 
   &[hidden]:not([reveal]) {
     display: none;
@@ -4536,6 +4540,21 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.product-card .buy-buttons-block {
+  position: absolute;
+  bottom: 3%;
+  z-index: 2;
+  right: 11px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  width: 52px;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #000;
 }
 
 .jdgm-prev-badge__text {
