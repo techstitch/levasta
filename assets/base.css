@@ -152,6 +152,8 @@ select {
 
 .product-card__content {
   position: relative;
+  height: fit-content !important;
+  min-height: unset;
 }
 
 .product-card__content {
