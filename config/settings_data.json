@@ -38,6 +38,7 @@
     "type_letter_spacing_h6": "heading-normal",
     "type_case_h6": "uppercase",
     "page_width": "narrow",
+    "badge_position": "bottom-left",
     "badge_corner_radius": 0,
     "badge_text_transform": "uppercase",
     "primary_button_border_width": 0,
