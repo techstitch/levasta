@@ -4511,6 +4511,7 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 .product-card .layout-panel-flex--column>.group-block--height-fit .group-block--height-fit {
   padding: 0;
   border: none;
+  margin: 0;
 }
 
 .layout-panel-flex--column>.group-block--height-fill {
