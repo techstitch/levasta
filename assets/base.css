@@ -4512,6 +4512,7 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
   padding: 0;
   border: none;
   margin: 0;
+  border-radius: 0;
 }
 
 .layout-panel-flex--column>.group-block--height-fill {
