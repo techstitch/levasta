@@ -4511,8 +4511,10 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 .product-card .layout-panel-flex--column>.group-block--height-fit .group-block--height-fit {
   padding: 0;
   border: none;
-  margin: 0;
-  border-radius: 0;
+  margin: 0 -15px -15px;
+  border-radius: 0 0 12px 12px;
+  background: #000;
+  width: calc(100% + 30px);
 }
 
 .layout-panel-flex--column>.group-block--height-fill {
