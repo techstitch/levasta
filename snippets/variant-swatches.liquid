@@ -175,6 +175,22 @@
         <ul class="variant-swatches-list">
           {{ children }}
         </ul>
+        <style>
+          .variant-swatches-list {
+            display: flex;
+            flex-wrap: wrap; /* or remove if you want single line */
+            gap: var(--gap-sm);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          .variant-swatches-list {
+            display: flex;
+            gap: var(--gap-sm);
+            overflow-x: auto;
+            flex-wrap: nowrap;
+          }
+        </style>
       </fieldset>
     {%- endfor -%}
     <script type="application/json">
