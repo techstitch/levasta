@@ -46,13 +46,12 @@
     border: 0;
     border-radius: 0;
 
-    &::before {
-      /* This doesn't work in Safari without the counter-reset. https://stackoverflow.com/a/40179718 */
+    /* &::before {
       counter-reset: overflow-count var(--overflow-count);
       content: '+' counter(overflow-count);
       line-height: 1;
       cursor: pointer;
-    }
+    } */
   }
 
   .hidden-swatches__count:hover {
@@ -171,7 +170,20 @@
           </li>
         {% endcapture %}
 
-        {% render 'overflow-list', children: children, ref: 'overflowList' %}
+        {% comment %} {% render 'overflow-list', children: children, ref: 'overflowList' %} {% endcomment %}
+        <ul class="variant-swatches-list">
+          {{ children }}
+        </ul>
+        <style>
+          .variant-swatches-list {
+            display: flex;
+            flex-wrap: wrap; /* or remove if you want single line */
+            gap: var(--gap-sm);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+        </style>
       </fieldset>
     {%- endfor -%}
     <script type="application/json">
