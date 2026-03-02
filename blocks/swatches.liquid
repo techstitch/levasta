@@ -1,16 +1,13 @@
-
-
 {%- liquid
   assign block_settings = block.settings
-  for product_option in closest.product.options_with_values
-    assign swatch_count = product_option.values | map: 'swatch' | compact | size
+  assign product_has_swatches = false
 
-    if swatch_count > 0
+  for product_option in closest.product.options_with_values
+    if product_option.name == 'Color' and product_option.values.size > 0
       assign product_has_swatches = true
     endif
   endfor
 -%}
-
 {% stylesheet %}
   product-swatches {
     width: 100%;
@@ -21,6 +18,8 @@
     flex-shrink: 0;
   }
 {% endstylesheet %}
+
+{% if product_has_swatches %}
   <product-swatches
     data-product-id="{{ closest.product.id }}"
     data-product-url="{{ closest.product.url }}"
@@ -38,6 +37,7 @@
   >
     {% render 'variant-swatches', product_resource: closest.product %}
   </product-swatches>
+{% endif %}
 
 {% schema %}
 {
