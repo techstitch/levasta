@@ -4538,6 +4538,14 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
   right: 0;
 }
 
+.product-card .buy-buttons-block {
+  position: absolute;
+  bottom: 110px;
+  z-index: 2;
+  right: 0;
+  width: fit-content;
+}
+
 .jdgm-prev-badge__text {
   color: #fff;
 }
