@@ -2210,20 +2210,6 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   }
 }
 
-overflow-list::part(more) {
-  display: none !important;
-}
-
-.hidden-swatches__count {
-  display: none !important;
-}
-
-overflow-list::part(list) {
-  height: auto !important;
-  flex-wrap: wrap !important;
-  overflow: visible !important;
-}
-
 .variant-picker .variant-option--buttons label:has(.swatch) {
   border-radius: var(--variant-picker-swatch-radius);
 }
