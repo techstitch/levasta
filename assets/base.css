@@ -2632,7 +2632,7 @@ product-price.text-block:is(.h1, .h2, .h3, .h4, .h5, .h6)>*:not(.tax-note) {
 
 @container (max-width: 70px) {
   .card-gallery:hover .quick-add__button {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -4506,6 +4506,40 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
   border-radius: 12px;
   padding: 69px 15px 15px;
   margin-top: -47px;
+}
+
+.product-card .layout-panel-flex--column>.group-block--height-fit .group-block--height-fit {
+  padding: 15px;
+  border: none;
+  margin: 0 -15px -15px;
+  border-radius: 0 0 12px 12px;
+  background: #000;
+  width: calc(100% + 30px);
+}
+
+.product-card .layout-panel-flex--column>.group-block--height-fit .group-block--height-fit .group-block-content {
+  gap: 4px;
+}
+
+.product-card .card-gallery {
+  position: relative;
+}
+
+.product-card product-price {
+  color: #fff;
+}
+
+.product-card quick-add-component {
+  display: flex;
+  width: 200px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.jdgm-prev-badge__text {
+  color: #fff;
 }
 
 .layout-panel-flex--column>.group-block--height-fill {
