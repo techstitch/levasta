@@ -116,6 +116,10 @@
               },
               "blocks": {}
             },
+            "judge_me_reviews_preview_badge_4j6T7h": {
+              "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+              "settings": {}
+            },
             "divider_HrJgFt": {
               "type": "_divider",
               "name": "t:names.divider",
@@ -324,6 +328,7 @@
           "block_order": [
             "text_9WaLn7",
             "price_a7krng",
+            "judge_me_reviews_preview_badge_4j6T7h",
             "divider_HrJgFt",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
