@@ -171,10 +171,7 @@
           </li>
         {% endcapture %}
 
-        {% comment %} {% render 'overflow-list', children: children, ref: 'overflowList' %} {% endcomment %}
-        <ul class="variant-swatches-list">
-          {{ children }}
-        </ul>
+        {% render 'overflow-list', children: children, ref: 'overflowList' %}
       </fieldset>
     {%- endfor -%}
     <script type="application/json">
