@@ -291,69 +291,12 @@
         "section_width": "page-width",
         "gap": 0,
         "color_scheme": "",
-        "padding-block-start": 64,
-        "padding-block-end": 0
-      }
-    },
-    "utilities": {
-      "type": "footer-utilities",
-      "blocks": {
-        "copyright": {
-          "type": "footer-copyright",
-          "settings": {
-            "show_powered_by": true,
-            "font_size": "0.75rem",
-            "case": "none"
-          },
-          "blocks": {}
-        },
-        "footer_policy_list_YXDWfF": {
-          "type": "footer-policy-list",
-          "name": "t:names.policy_list",
-          "settings": {
-            "font_size": "0.75rem",
-            "case": "none"
-          },
-          "blocks": {}
-        },
-        "social_links_BGVf9A": {
-          "type": "social-links",
-          "name": "t:names.social_media_links",
-          "settings": {
-            "facebook_url": "https://www.facebook.com/",
-            "instagram_url": "https://www.instagram.com/",
-            "youtube_url": "https://www.youtube.com/",
-            "tiktok_url": "https://www.tiktok.com/",
-            "twitter_url": "https://www.x.com/",
-            "threads_url": "",
-            "linkedin_url": "",
-            "bluesky_url": "",
-            "snapchat_url": "",
-            "pinterest_url": "",
-            "tumblr_url": "",
-            "vimeo_url": "",
-            "custom_url": ""
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "copyright",
-        "footer_policy_list_YXDWfF",
-        "social_links_BGVf9A"
-      ],
-      "settings": {
-        "section_width": "page-width",
-        "gap": 24,
-        "divider_thickness": 1,
-        "color_scheme": "",
-        "padding-block-start": 12,
-        "padding-block-end": 16
+        "padding-block-start": 70,
+        "padding-block-end": 50
       }
     }
   },
   "order": [
-    "footer",
-    "utilities"
+    "footer"
   ]
 }
