@@ -4041,9 +4041,9 @@ slideshow-slide {
     content-visibility: visible;
   }
 
-  slideshow-component slideshow-slide:not([aria-hidden='false']) {
+  /* slideshow-component slideshow-slide:not([aria-hidden='false']) {
     content-visibility: hidden;
-  }
+  } */
 
   &[hidden]:not([reveal]) {
     display: none;
@@ -4094,9 +4094,9 @@ slideshow-slide.product-media-container--tallest {
  * Be specific about HTML children structure to avoid targeting nested slideshows.
  * Ensure that the content is 'visible' while scrolling instead of 'auto' to avoid issues in Safari.
  */
-/* slideshow-component:is([dragging], [transitioning], :hover)>slideshow-container>slideshow-slides>slideshow-slide {
+slideshow-component:is([dragging], [transitioning], :hover)>slideshow-container>slideshow-slides>slideshow-slide {
   content-visibility: visible;
-} */
+}
 
 slideshow-slides[gutters*='start'] {
   padding-inline-start: var(--gutter-slide-width, 0);
