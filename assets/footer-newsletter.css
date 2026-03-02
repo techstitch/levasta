@@ -7,4 +7,8 @@
 
 .footer-newsletter-heading {
     font-family: 'Integral';
+    font-size: 2.8rem;
+    width: 50%;
+    font-weight: 600;
+    margin: 0;
 }
