@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    background-color: #000;
+    border-radius: 12px;
 }
 
 .footer-newsletter-heading {
@@ -11,4 +13,5 @@
     width: 50%;
     font-weight: 600;
     margin: 0;
+    color: #fff;
 }
