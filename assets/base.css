@@ -4540,10 +4540,17 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 
 .product-card .buy-buttons-block {
   position: absolute;
-  bottom: 110px;
+  bottom: 3%;
   z-index: 2;
-  right: 0;
-  width: fit-content;
+  right: 11px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  width: 52px;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #000;
 }
 
 .jdgm-prev-badge__text {
