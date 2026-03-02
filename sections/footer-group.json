@@ -11,6 +11,11 @@
   "type": "footer",
   "name": "Footer",
   "sections": {
+    "footer_newsletter_tF9HJz": {
+      "type": "footer-newsletter",
+      "name": "Footer Newsletter",
+      "settings": {}
+    },
     "footer": {
       "type": "Footer",
       "blocks": {
@@ -297,6 +302,7 @@
     }
   },
   "order": [
+    "footer_newsletter_tF9HJz",
     "footer"
   ]
 }
