@@ -88,10 +88,9 @@
         assign swatch_count = product_option.values | map: 'swatch' | compact | size
       -%}
 
-      {% if swatch_count == 0 %}
+      {% if product_option.name != 'Color' %}
         {% continue %}
       {% endif %}
-
       {%- liquid
         # Identify which option position this swatch option is
         # Use product_option.position which is the actual position among ALL options
