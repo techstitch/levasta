@@ -194,15 +194,21 @@
     color: #fff !important;
     font-family: 'Satoshi';
     background: #000;
+    width: 100%;
     padding: 10px;
     border: solid 1px #fff;
     border-radius: 12px;
+    cursor: pointer;
+    transition: all ease-in 0.3s;
 
     @media screen and (max-width: 749px) {
       width: 100%;
     }
   }
-
+  .email-signup__button:hover {
+    color: #000;
+    background-color: #fff;
+  }
   .email-signup__input,
   .email-signup__button--text {
     padding: var(--padding-lg) var(--padding-3xl);
