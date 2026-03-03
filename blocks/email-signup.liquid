@@ -51,8 +51,19 @@
           aria-label="{{ 'actions.sign_up' | t }}"
         {% endif %}
       >
-
-        Subscribe to Newsletter
+        {% if block_settings.display_type == 'text' %}
+          {{ block_settings.label }}
+        {% else %}
+          <svg
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            class="email-signup__button-icon"
+          >
+            {% render 'icon', icon: 'arrow' %}
+          </svg>
+        {% endif %}
       </button>
     </div>
 
