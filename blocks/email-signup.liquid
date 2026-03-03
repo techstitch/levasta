@@ -51,19 +51,22 @@
           aria-label="{{ 'actions.sign_up' | t }}"
         {% endif %}
       >
-        {% if block_settings.display_type == 'text' %}
-          {{ block_settings.label }}
-        {% else %}
-          <svg
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-            focusable="false"
-            aria-hidden="true"
-            class="email-signup__button-icon"
-          >
-            {% render 'icon', icon: 'arrow' %}
-          </svg>
-        {% endif %}
+        {% comment %}
+          {% if block_settings.display_type == 'text' %}
+            {{ block_settings.label }}
+          {% else %}
+            <svg
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              focusable="false"
+              aria-hidden="true"
+              class="email-signup__button-icon"
+            >
+              {% render 'icon', icon: 'arrow' %}
+            </svg>
+          {% endif %}
+        {% endcomment %}
+        Subscribe to Newsletter
       </button>
     </div>
 
@@ -166,6 +169,7 @@
     border-radius: 12px;
     border: none;
     font-family: 'Satoshi';
+    font-weight: 500;
     /* border-style: solid;
     border-color: var(--color-input-border); */
 
