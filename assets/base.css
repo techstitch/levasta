@@ -1169,9 +1169,11 @@ ul[product-grid-view='zoom-out'] .card-gallery>img {
 .product-grid-view-zoom-out--details>div.h6>*>* {
   line-height: 1.2;
 }
-    footer {
-      background-color: #F2F0F1;
-    }
+
+footer {
+  background-color: #F2F0F1;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root:active-view-transition-type(product-grid) {
     details[open] floating-panel-component {
@@ -2508,7 +2510,8 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 }
 
 .variant-option__button-label--has-swatch:has(:checked) {
-scale: ;
+  scale: 1.1;
+  opacity: .7;
 }
 
 /* This triggers iOS < 16.4. The outline bug is not recognized as a lack of @supports */
