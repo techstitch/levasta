@@ -94,6 +94,23 @@
               },
               "blocks": {}
             },
+            "judge_me_reviews_preview_badge_4j6T7h": {
+              "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+              "settings": {}
+            },
+            "variant_picker_R3rGDr": {
+              "type": "variant-picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": true,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "price_a7krng": {
               "type": "price",
               "settings": {
@@ -109,23 +126,6 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "color": "var(--color-foreground)",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "judge_me_reviews_preview_badge_4j6T7h": {
-              "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-              "settings": {}
-            },
-            "variant_picker_R3rGDr": {
-              "type": "variant-picker",
-              "settings": {
-                "variant_style": "buttons",
-                "show_swatches": true,
-                "alignment": "left",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -314,9 +314,9 @@
           },
           "block_order": [
             "text_9WaLn7",
-            "price_a7krng",
             "judge_me_reviews_preview_badge_4j6T7h",
             "variant_picker_R3rGDr",
+            "price_a7krng",
             "buy_buttons_eYQEYi",
             "accordion_NKWPiW"
           ]
