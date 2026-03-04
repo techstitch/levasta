@@ -2511,7 +2511,6 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
   --focus-outline: var(--focus-outline-width) solid var(--color-foreground);
 
   outline: var(--focus-outline);
-  border-radius: var(--style-border-radius-50);
   /* outline-offset: var(--focus-outline-offset); */
 
 }
