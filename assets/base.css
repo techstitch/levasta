@@ -1402,6 +1402,8 @@ button.shopify-payment-button__button--unbranded {
   transition: all 0.3s ease;
   font-weight: 500;
   font-family: 'Satoshi' !important;
+  font-size: 0.8rem !important;
+  text-transform: none !important;
 }
 
 .shopify-payment-button__button:hover {
