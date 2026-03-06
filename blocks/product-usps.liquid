@@ -1,13 +1,14 @@
 <link rel="stylesheet" href="{{ 'product-usps.css' | asset_url }}">
-"category": "t:categories.product"
-<div class="product-usps-container"></div>
+<div class="product-usps-container">
+  {% content_for "blocks" %}
+</div>
 {% schema %}
 {
   "name": "Product USPs",
+  "blocks": [{"type": "@theme"}, {"type": "@app"}],
   "presets": [
     {
-      "name": "Product USPs",
-      "category": "t:categories.product"
+      "name": "Product USPs"
     }
   ]
 }
