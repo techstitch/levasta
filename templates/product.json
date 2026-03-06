@@ -172,7 +172,50 @@
               "type": "product-usps",
               "name": "Product USPs",
               "settings": {},
-              "blocks": {}
+              "blocks": {
+                "product_usp_AFDnkV": {
+                  "type": "product-usp",
+                  "name": "Product USP",
+                  "settings": {
+                    "image": "shopify://shop_images/Ergonomic_Lumbar_Support.png",
+                    "title": "Ergonomic Lumbar Support"
+                  },
+                  "blocks": {}
+                },
+                "product_usp_fEnWNq": {
+                  "type": "product-usp",
+                  "name": "Product USP",
+                  "settings": {
+                    "image": "shopify://shop_images/Breathable_Mesh_Back.png",
+                    "title": "Breathable Mesh Back"
+                  },
+                  "blocks": {}
+                },
+                "product_usp_tfFK9J": {
+                  "type": "product-usp",
+                  "name": "Product USP",
+                  "settings": {
+                    "image": "shopify://shop_images/Heavy_Duty_Base.png",
+                    "title": "Heavy Duty Base"
+                  },
+                  "blocks": {}
+                },
+                "product_usp_fmcar3": {
+                  "type": "product-usp",
+                  "name": "Product USP",
+                  "settings": {
+                    "image": "shopify://shop_images/Easy_Assembly.png",
+                    "title": "Easy Assembly"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "product_usp_AFDnkV",
+                "product_usp_fEnWNq",
+                "product_usp_tfFK9J",
+                "product_usp_fmcar3"
+              ]
             },
             "accordion_NKWPiW": {
               "type": "accordion",
