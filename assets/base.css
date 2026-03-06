@@ -1399,6 +1399,13 @@ button.shopify-payment-button__button--unbranded {
   box-shadow: inset 0 0 0 var(--button-border-width) var(--button-border-color);
   padding-block: var(--button-padding-block);
   padding-inline: var(--button-padding-inline);
+  transition: all 0.3s ease;
+}
+
+.button.shopify-payment-button__button--unbranded:hover {
+  background-color: #fff;
+  border: solid 1px #000;
+  color: #000;
 }
 
 .button {
