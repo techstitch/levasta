@@ -26,11 +26,12 @@
 
 .product-usp__icon {
     width: 65%;
+    cursor: pointer;
     margin-bottom: 10px;
 }
 
 .product-usp__icon:hover {
-    animation: float 1s ease-in-out infinite;
+    animation: float 1.4s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -39,7 +40,7 @@
     }
 
     50% {
-        transform: translateY(-4px);
+        transform: translateY(-3px);
     }
 
     100% {
