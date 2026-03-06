@@ -28,3 +28,21 @@
     width: 65%;
     margin-bottom: 10px;
 }
+
+.product-usp__icon:hover {
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
