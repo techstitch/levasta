@@ -13,4 +13,5 @@
 
 .product-usps-container .shopify-block {
     width: fit-content;
+    display: flex;
 }
