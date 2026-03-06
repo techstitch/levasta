@@ -1409,6 +1409,7 @@ button.shopify-payment-button__button--unbranded {
 
 .button:not(.button-secondary, .button-unstyled) {
   outline-color: var(--button-background-color);
+  transition: all 0.3s ease;
 }
 
 .button:not(.button-secondary, .button-unstyled):hover {
