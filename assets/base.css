@@ -1403,9 +1403,9 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button.shopify-payment-button__button--unbranded:hover {
-  background-color: #fff;
-  border: solid 1px #000;
-  color: #000;
+  background-color: #fff !important;
+  border: solid 1px #000 !important;
+  color: #000 !important;
 }
 
 .button {
