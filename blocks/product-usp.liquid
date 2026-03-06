@@ -1,0 +1,38 @@
+<div class="product-usp">
+  <div class="product-usp__icon">
+    {%- if block.settings.image != blank -%}
+      {{ block.settings.image | image_url: width: 50 | image_tag }}
+    {%- else -%}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+  </div>
+  <div class="product-usp__content">
+    <div class="product-usp__title">
+      {{ block.settings.title }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product USP",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Free Shipping"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product USP"
+    }
+  ]
+}
+{% endschema %}
