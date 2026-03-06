@@ -15,6 +15,7 @@
 /* Swiper Container Styles */
 .testimonials-swiper {
     margin-top: 45px;
+    width: 100%;
     padding: 0 10px;
 }
 

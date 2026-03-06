@@ -1,7 +1,7 @@
 <div class="product-usp">
   <div class="product-usp__icon">
     {%- if block.settings.image != blank -%}
-      {{ block.settings.image | image_url: width: 50 | image_tag }}
+      {{ block.settings.image | image_url: width: 500 | image_tag }}
     {%- else -%}
       {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
     {%- endif -%}
