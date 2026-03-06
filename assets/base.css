@@ -2278,11 +2278,13 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 .variant-option--buttons legend {
   padding: 0;
   margin-block-end: var(--margin-xs);
+  font-size: .8rem;
 }
 
 .variant-option__swatch-value {
   padding-inline-start: var(--padding-xs);
   color: rgb(var(--color-foreground-rgb) / var(--opacity-70));
+  font-size: .8rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
