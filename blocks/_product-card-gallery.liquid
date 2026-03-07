@@ -21,7 +21,7 @@
           {%- elsif product.compare_at_price > product.price -%}
             <div class="product-badge-sale-container">
               <img src="https://cdn.shopify.com/s/files/1/0961/8086/3276/files/Star_21.png?v=1772878791">
-              {{ 'content.product_badge_sale' | t }}
+              <span>{{ 'content.product_badge_sale' | t }}</span>
             </div>
           {%- endif -%}
         </div>
@@ -94,6 +94,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .product-badge-sale-container span {
+    position: relative;
+    z-index: 1;
   }
 {% endstylesheet %}
 
