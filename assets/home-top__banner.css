@@ -121,7 +121,10 @@
     left: 50%;
     width: 300%;
     padding-top: 300%;
-    background: linear-gradient(180deg, #1f4a9a, #132e5c);
+    background: linear-gradient(180deg,
+            #2A56A8 0%,
+            #1A3D7C 50%,
+            #0F2550 100%);
     border-radius: 50%;
     transform: translate(-50%, 50%) scale(0);
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
