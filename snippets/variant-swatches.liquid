@@ -171,30 +171,17 @@
         {% endcapture %}
 
         {% comment %} {% render 'overflow-list', children: children, ref: 'overflowList' %} {% endcomment %}
-        <ul class="variant-swatches-list" onpointerdown="event.stopPropagation()" ontouchstart="event.stopPropagation()" ontouchmove="event.stopPropagation()" onmousedown="event.stopPropagation()">
+        <ul class="variant-swatches-list">
           {{ children }}
         </ul>
         <style>
           .variant-swatches-list {
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap; /* or remove if you want single line */
             gap: var(--gap-sm);
             list-style: none;
             padding: 0;
             margin: 0;
-            overflow-x: auto;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            touch-action: pan-y;
-            scroll-snap-type: x mandatory;
-            overscroll-behavior-x: contain;
-          }
-          .variant-swatches-list::-webkit-scrollbar {
-            display: none;
-          }
-          .variant-swatches-list .variant-option__swatch {
-            flex-shrink: 0;
-            scroll-snap-align: start;
           }
         </style>
       </fieldset>
