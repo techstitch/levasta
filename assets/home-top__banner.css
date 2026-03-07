@@ -98,6 +98,7 @@
     position: relative;
     height: 100%;
     transition: all .3s ease;
+    position: relative;
 }
 
 .home_top_banner-right-column1-block:hover {
