@@ -6,7 +6,9 @@
       <p>{{ section.settings.subheading }}</p>
       <div class="home_top_banner-left-buttons-container">
         <a href="{{ section.settings.primary_url }}">{{ section.settings.primary_button_text }}</a>
-        <a href="{{ section.settings.secondary_url }}">{{ section.settings.secondary_button_text }}</a>
+        {% if section.settings.secondary_button_text != blank %}
+          <a href="{{ section.settings.secondary_url }}">{{ section.settings.secondary_button_text }}</a>
+        {% endif %}
       </div>
       <div class="home_top_banner-right-column1">
         {% for block in section.blocks %}

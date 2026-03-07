@@ -47,22 +47,22 @@
 }
 
 .home_top_banner-left-buttons-container a:first-of-type {
-    background: #1A3D7C;
-    color: #fff;
-    font-family: 'Inter';
-    border-radius: 100px;
-    padding: 16px 70px;
-    font-size: 1rem;
-    font-weight: 400;
-    transition: all .3s ease;
-    text-align: center;
-    border: solid 1px #1A3D7C;
+    background: #1A3D7C !important;
+    color: #fff !important;
+    font-family: 'Inter' !important;
+    border-radius: 100px !important;
+    padding: 16px 70px !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    transition: all .3s ease !important;
+    text-align: center !important;
+    border: solid 1px #1A3D7C !important;
 }
 
 .home_top_banner-left-buttons-container a:first-of-type:hover {
-    background: #fff;
-    color: #1A3D7C;
-    transition: all .3s ease;
+    background: #fff !important;
+    color: #1A3D7C !important;
+    transition: all .3s ease !important;
 }
 
 .home_top_banner-left-buttons-container a:last-of-type {
