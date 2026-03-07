@@ -47,7 +47,7 @@
 }
 
 .home_top_banner-left-buttons-container a:first-of-type {
-    background: #1A3D7C;
+    background: linear-gradient(180deg, #4c85f1 0%, #1A3D7C 50%, #0F2550 100%);
     color: #fff;
     font-family: 'Inter';
     border-radius: 100px;
