@@ -125,6 +125,7 @@
     height: 100%;
     width: auto;
     border-radius: 0 0 16px 16px;
+    position: relative;
     z-index: 1;
 }
 
