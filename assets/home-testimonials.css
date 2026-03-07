@@ -5,11 +5,12 @@
 }
 
 .home-testimonials-heading {
-    font-family: 'Inter';
     font-weight: 600;
+    font-family: 'Sora';
     font-size: 2rem;
     text-align: center;
     margin: 0;
+    color: #fff;
 }
 
 /* Swiper Container Styles */
@@ -168,7 +169,7 @@
     height: 10px;
     border-radius: 50%;
     background-color: transparent !important;
-    border: solid 1px #000 !important;
+    border: solid 1px #fff !important;
     opacity: 1 !important;
     cursor: pointer;
     padding: 0 !important;
@@ -182,7 +183,7 @@
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: #000 !important;
+    background-color: #fff !important;
     width: 12px;
     height: 12px;
 }

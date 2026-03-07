@@ -11,9 +11,12 @@
 }
 
 .faq-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1.2fr 1fr; */
+    display: flex;
     gap: 60px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .faq-item {
@@ -41,11 +44,13 @@
     font-size: 1.05rem;
     font-weight: 600;
     color: #000;
+    font-family: 'Inter', sans-serif;
 }
 
 .faq-question span {
     font-size: 1.6rem;
     line-height: .4;
+    color: #1A3D7C;
 }
 
 .need-help-title {
@@ -66,8 +71,9 @@
 .faq-answer p {
     padding: 0 0 15px;
     font-size: .95rem;
-    font-weight: 500;
+    font-weight: 400;
     opacity: .8;
+    font-family: 'Inter', sans-serif;
 }
 
 .need-help-form input,
@@ -92,9 +98,9 @@
     gap: 12px;
 }
 
-.primary-btn {
+.primary-btn-2 {
     width: 100%;
-    background: #000;
+    background: #1A3D7C;
     color: #fff;
     padding: 14px;
     border-radius: 8px;

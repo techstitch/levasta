@@ -3,18 +3,19 @@
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 12px;
     padding: 40px 50px;
     margin-bottom: -100px;
+    border: solid 1px #1A3D7C;
     z-index: 1;
 }
 
 .footer-newsletter-heading {
     font-family: 'Sora';
-    font-size: 2.6rem;
-    width: 55%;
+    font-size: 2.4rem;
+    width: 45%;
     font-weight: 600;
     margin: 0;
-    color: #fff;
+    color: #1A3D7C;
 }

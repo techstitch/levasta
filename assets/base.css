@@ -4336,7 +4336,8 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 
 .section-resource-list__header h4 {
   font-weight: 600;
-  font-family: 'Inter';
+  font-family: 'Sora';
+  font-size: 2rem;
 }
 
 .section-resource-list.section--full-width product-card-link>.group-block,

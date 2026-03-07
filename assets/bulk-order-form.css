@@ -60,7 +60,7 @@
 }
 
 .primary-btn {
-    background: #000;
+    background: #1A3D7C;
     color: #fff;
     padding: 14px 22px;
     border-radius: 12px;
@@ -71,6 +71,13 @@
     font-size: 1.3rem;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
+    border: solid 1px #1A3D7C;
+    transition: all .3s ease;
+}
+
+.primary-btn:hover {
+    background: #fff;
+    color: #1A3D7C;
 }
 
 .whatsapp-btn {
@@ -84,6 +91,14 @@
     font-size: 1.3rem;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
+    border: solid 1px #25d366;
+    transition: all .3s ease;
+
+}
+
+.whatsapp-btn:hover {
+    background: #fff;
+    color: #25d366;
 }
 
 .bulk-order-right {
