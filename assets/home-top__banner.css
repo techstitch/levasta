@@ -17,10 +17,11 @@
 }
 
 .home_top_banner-left-container h1 {
-    font-family: 'Sora', sans-serif;
+    font-family: 'Sora  ', sans-serif;
     font-size: 4rem;
     font-weight: 500;
     margin: 0;
+    text-transform: lowercase;
 }
 
 .home_top_banner-left-container p {
