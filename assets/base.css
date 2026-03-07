@@ -58,10 +58,10 @@ select {
   border-radius: var(--style-border-radius-inputs);
 }
 
-input:hover,
+/* input:hover,
 textarea:hover {
   background-color: var(--color-input-hover-background);
-}
+} */
 
 /** override ios and firefox defaults */
 select {
