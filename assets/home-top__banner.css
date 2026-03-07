@@ -52,7 +52,7 @@
     font-family: 'Inter';
     border-radius: 100px;
     padding: 16px 70px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     transition: all .3s ease;
     text-align: center;
@@ -73,7 +73,7 @@
     text-align: center;
     border-radius: 100px;
     padding: 16px 70px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     transition: all .3s ease;
 }
