@@ -20,7 +20,7 @@
 .bulk-order-left h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    font-family: 'Satoshi';
+    font-family: 'Inter';
     font-weight: 400;
 }
 
@@ -70,7 +70,7 @@
     text-align: center;
     font-size: 1.3rem;
     font-weight: 500;
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .whatsapp-btn {
@@ -83,7 +83,7 @@
     text-align: center;
     font-size: 1.3rem;
     font-weight: 500;
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .bulk-order-right {

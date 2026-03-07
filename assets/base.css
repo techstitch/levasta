@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   margin: 0;
   min-height: 100svh;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-variation-settings: 'slnt' 0;
 }
 
@@ -58,10 +58,10 @@ select {
   border-radius: var(--style-border-radius-inputs);
 }
 
-input:hover,
+/* input:hover,
 textarea:hover {
   background-color: var(--color-input-hover-background);
-}
+} */
 
 /** override ios and firefox defaults */
 select {
@@ -1171,7 +1171,7 @@ ul[product-grid-view='zoom-out'] .card-gallery>img {
 }
 
 footer {
-  background-color: #F2F0F1;
+  background-color: #1A3D7C;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -1401,7 +1401,7 @@ button.shopify-payment-button__button--unbranded {
   padding-inline: var(--button-padding-inline);
   transition: all 0.3s ease;
   font-weight: 500;
-  font-family: 'Satoshi' !important;
+  font-family: 'Inter' !important;
   font-size: 0.8rem !important;
   text-transform: none !important;
 }
@@ -2660,7 +2660,7 @@ product-price.text-block:is(.h1, .h2, .h3, .h4, .h5, .h6)>*:not(.tax-note) {
   text-decoration-thickness: 1.5px;
   font-size: 1rem;
   font-weight: 500;
-  font-family: 'Satoshi';
+  font-family: 'Inter';
 }
 
 .card-gallery {
@@ -4336,7 +4336,7 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 
 .section-resource-list__header h4 {
   font-weight: 600;
-  font-family: 'Satoshi';
+  font-family: 'Inter';
 }
 
 .section-resource-list.section--full-width product-card-link>.group-block,

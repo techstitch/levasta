@@ -2,9 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
-    border: solid 1px #000;
+    border: solid 1px #00000040;
     border-radius: 12px;
-    padding: 15px;
+    margin-bottom: 15px;
+    padding: 25px 15px;
 }
 
 .product-usp {
@@ -13,7 +14,7 @@
     justify-content: start;
     align-items: center;
     text-align: center;
-    font-family: 'Satoshi';
+    font-family: 'Inter';
     font-size: .7rem;
     font-weight: 500;
     line-height: 1.2;
