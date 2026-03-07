@@ -91,6 +91,14 @@
     font-size: 1.3rem;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
+    border: solid 1px #25d366;
+    transition: all .3s ease;
+
+}
+
+.whatsapp-btn:hover {
+    background: #fff;
+    color: #25d366;
 }
 
 .bulk-order-right {
