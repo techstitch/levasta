@@ -71,6 +71,13 @@
     font-size: 1.3rem;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
+    border: solid 1px #1A3D7C;
+    transition: all .3s ease;
+}
+
+.primary-btn:hover {
+    background: #fff;
+    color: #1A3D7C;
 }
 
 .whatsapp-btn {
