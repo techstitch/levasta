@@ -104,6 +104,13 @@
 .home_top_banner-right-column1-block-background {
     background-color: #fff;
     border: solid 1px #1A3D7C;
+    height: 59%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    border-radius: 12px;
 }
 
 .home_top_banner-right-column1-block:hover {
@@ -118,6 +125,7 @@
     height: 100%;
     width: auto;
     border-radius: 0 0 16px 16px;
+    z-index: 1;
 }
 
 .home_top_banner-right-column1-block p {
@@ -133,6 +141,7 @@
     width: 100%;
     font-size: .85rem;
     text-align: center;
+    z-index: 1;
 }
 
 .home_top_banner-right-column2 {
