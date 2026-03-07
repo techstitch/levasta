@@ -67,8 +67,9 @@
 .faq-answer p {
     padding: 0 0 15px;
     font-size: .95rem;
-    font-weight: 500;
+    font-weight: 400;
     opacity: .8;
+    font-family: 'Inter', sans-serif;
 }
 
 .need-help-form input,
