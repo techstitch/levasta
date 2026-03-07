@@ -11,8 +11,9 @@
 }
 
 .faq-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1.2fr 1fr; */
+    display: flex;
     gap: 60px;
 }
 
