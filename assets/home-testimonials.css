@@ -169,7 +169,7 @@
     height: 10px;
     border-radius: 50%;
     background-color: transparent !important;
-    border: solid 1px #000 !important;
+    border: solid 1px #fff !important;
     opacity: 1 !important;
     cursor: pointer;
     padding: 0 !important;
@@ -183,7 +183,7 @@
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: #000 !important;
+    background-color: #fff !important;
     width: 12px;
     height: 12px;
 }
