@@ -69,13 +69,12 @@
 
   .product-badges__badge {
     --badge-font-size: var(--font-size--xs);
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--color-foreground);
-    background: var(--color-background);
+    /* background: var(--color-background); */
     font-size: var(--badge-font-size);
     font-family: var(--badge-font-family);
     font-weight: var(--badge-font-weight);
@@ -86,6 +85,15 @@
   .product-badges__badge--rectangle {
     padding-block: var(--badge-rectangle-padding-block);
     padding-inline: var(--badge-rectangle-padding-inline);
+  }
+  .product-badge-sale-container {
+    position: relative;
+  }
+  .product-badge-sale-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 {% endstylesheet %}
 
