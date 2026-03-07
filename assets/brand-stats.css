@@ -23,13 +23,13 @@
 }
 
 .brand-stats-block p:first-of-type {
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 4rem;
     font-weight: 900;
 }
 
 .brand-stats-block p:last-of-type {
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
     opacity: 0.6;
     margin-top: -5px;
