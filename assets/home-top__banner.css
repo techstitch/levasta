@@ -46,7 +46,7 @@
     gap: 20px;
 }
 
-.home_top_banner-left-buttons-container a:first-of-type {
+.home_top_banner-left-buttons-container a:last-of-type {
     background: #1A3D7C;
     color: #fff;
     font-family: 'Inter';
@@ -59,13 +59,13 @@
     border: solid 1px #1A3D7C;
 }
 
-.home_top_banner-left-buttons-container a:first-of-type:hover {
+.home_top_banner-left-buttons-container a:last-of-type:hover {
     background: #fff;
     color: #1A3D7C;
     transition: all .3s ease;
 }
 
-.home_top_banner-left-buttons-container a:last-of-type {
+.home_top_banner-left-buttons-container a:first-of-type {
     background: #fff;
     color: #1A3D7C;
     border: solid 1px #1A3D7C;
@@ -78,7 +78,7 @@
     transition: all .3s ease;
 }
 
-.home_top_banner-left-buttons-container a:last-of-type:hover {
+.home_top_banner-left-buttons-container a:first-of-type:hover {
     background: #1A3D7C;
     color: #fff;
     transition: all .3s ease;
