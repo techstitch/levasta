@@ -5,11 +5,12 @@
 }
 
 .home-testimonials-heading {
-    font-family: 'Inter';
     font-weight: 600;
+    font-family: 'Sora';
     font-size: 2rem;
     text-align: center;
     margin: 0;
+    color: #fff;
 }
 
 /* Swiper Container Styles */
