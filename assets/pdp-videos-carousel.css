@@ -38,6 +38,7 @@
     margin-bottom: 10px;
     font-size: 1.2rem;
     font-weight: 600;
+    width: 90%;
 }
 
 .pdp-videos-carousel-content-subheading {
@@ -45,4 +46,5 @@
     margin-bottom: 0;
     font-size: 0.9rem;
     font-weight: 400;
+    width: 90%;
 }
