@@ -2221,7 +2221,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
     background-size: cover;
     width: 40px;
     height: 40px;
-    border: solid 1px #000;
+    border: solid 1px #1A3D7C;
     border-radius: 6px;
   }
 
