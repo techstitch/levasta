@@ -1,7 +1,22 @@
 <link rel="stylesheet" href="{{ 'pdp-videos-carousel.css' | asset_url }}">
+<div class="section pdp-videos-carousel-container">
+  <p class="section-heading">{{ section.settings.section_heading }}</p>
+  <div class="pdp-videos-carousel-wrapper">
+    <video src=""></video>
+    <p class="pdp-videos-carousel-content-heading"></p>
+    <p class="pdp-videos-carousel-content-subheading"></p>
+  </div>
+</div>
 {% schema %}
 {
   "name": "Videos Carousel PDP",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading"
+    }
+  ],
   "blocks": [
     {
       "type": "testimonial",
