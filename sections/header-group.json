@@ -17,7 +17,7 @@
         "announcement_dwXVCW": {
           "type": "_announcement",
           "settings": {
-            "text": "Sign up & get <strong>FREE Delivery PAN India</strong>.",
+            "text": "<a href=\"/pages/contact\" title=\"Contact\">Sign up</a> & get <strong>FREE Delivery.</strong>",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
