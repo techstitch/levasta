@@ -28,3 +28,7 @@
     text-align: center;
     font-family: 'Inter';
 }
+
+.pdp-videos-carousel-video video {
+    border-radius: 12px;
+}
