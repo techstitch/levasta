@@ -121,12 +121,7 @@
     {% endif %}
 
     {% if show_compare_price and discount_percentage > 0 %}
-      <span
-        class="price-discount-badge"
-        style="display: inline-flex; align-items: center; background-color: #cb2b2b; color: #fff; padding: 0.2em 0.5em; border-radius: 4px; font-size: 0.8em; margin-left: 8px; font-weight: bold; line-height: 1; vertical-align: middle;"
-      >
-        {{- discount_percentage }}% OFF</span
-      >
+      <span class="price-discount-badge">{{- discount_percentage }}% OFF</span>
     {% endif %}
   {% endif %}
   {%- if selected_variant.unit_price and show_unit_price %}
