@@ -397,14 +397,6 @@
             "video_subheading": "Soft PU Coated 3D armrests that go up-down, forward-backward and rotates around the axis."
           }
         },
-        "video_Btm94C": {
-          "type": "video",
-          "settings": {
-            "video_url": "shopify://files/videos/The mechanics of sound. Headphone (1)..mp4",
-            "video_heading": "3D Armrests",
-            "video_subheading": "Soft PU Coated 3D armrests that go up-down, forward-backward and rotates around the axis."
-          }
-        },
         "video_pTLpwa": {
           "type": "video",
           "settings": {
@@ -440,7 +432,6 @@
       },
       "block_order": [
         "video_VWxg4N",
-        "video_Btm94C",
         "video_pTLpwa",
         "video_UG46ee",
         "video_rYQcdU",
