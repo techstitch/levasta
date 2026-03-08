@@ -386,6 +386,71 @@
         "padding-block-end": 0
       }
     },
+    "pdp_videos_carousel_m7jwtX": {
+      "type": "pdp-videos-carousel",
+      "blocks": {
+        "video_VWxg4N": {
+          "type": "video",
+          "settings": {
+            "video_url": "shopify://files/videos/“I cannot wait to see how the community receives it.”By looking back in time, we created a new c.mp4",
+            "video_heading": "3D Armrests",
+            "video_subheading": "Soft PU Coated 3D armrests that go up-down, forward-backward and rotates around the axis."
+          }
+        },
+        "video_Btm94C": {
+          "type": "video",
+          "settings": {
+            "video_url": "shopify://files/videos/The mechanics of sound. Headphone (1)..mp4",
+            "video_heading": "3D Armrests",
+            "video_subheading": "Soft PU Coated 3D armrests that go up-down, forward-backward and rotates around the axis."
+          }
+        },
+        "video_pTLpwa": {
+          "type": "video",
+          "settings": {
+            "video_url": "shopify://files/videos/Business as usual.Headphone (1) by @intranetgirl.mp4",
+            "video_heading": "3D Armrests",
+            "video_subheading": "Soft PU Coated 3D armrests that go up-down, forward-backward and rotates around the axis."
+          }
+        },
+        "video_UG46ee": {
+          "type": "video",
+          "settings": {
+            "video_url": "shopify://files/videos/(a) series..mp4",
+            "video_heading": "3D Armrests",
+            "video_subheading": "Soft PU Coated 3D armrests that go up-down, forward-backward and rotates around the axis."
+          }
+        },
+        "video_rYQcdU": {
+          "type": "video",
+          "settings": {
+            "video_url": "shopify://files/videos/I miss flip phones and pink Bentleys..mp4",
+            "video_heading": "3D Armrests",
+            "video_subheading": "Soft PU Coated 3D armrests that go up-down, forward-backward and rotates around the axis."
+          }
+        },
+        "video_pqQLT7": {
+          "type": "video",
+          "settings": {
+            "video_url": "shopify://files/videos/(a) series. (1).mp4",
+            "video_heading": "3D Armrests",
+            "video_subheading": "Soft PU Coated 3D armrests that go up-down, forward-backward and rotates around the axis."
+          }
+        }
+      },
+      "block_order": [
+        "video_VWxg4N",
+        "video_Btm94C",
+        "video_pTLpwa",
+        "video_UG46ee",
+        "video_rYQcdU",
+        "video_pqQLT7"
+      ],
+      "name": "Videos Carousel PDP",
+      "settings": {
+        "section_heading": "Specifications"
+      }
+    },
     "product_recommendations_qnzPkn": {
       "type": "product-recommendations",
       "blocks": {
@@ -719,6 +784,7 @@
   },
   "order": [
     "main",
+    "pdp_videos_carousel_m7jwtX",
     "product_recommendations_qnzPkn",
     "177244249035e09990"
   ]
