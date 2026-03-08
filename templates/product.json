@@ -156,7 +156,7 @@
                   "type": "add-to-cart",
                   "static": true,
                   "settings": {
-                    "style_class": "button"
+                    "style_class": "button-secondary"
                   },
                   "blocks": {}
                 },
@@ -221,6 +221,7 @@
             "accordion_NKWPiW": {
               "type": "accordion",
               "name": "t:names.accordion",
+              "disabled": true,
               "settings": {
                 "icon": "caret",
                 "dividers": true,
@@ -380,7 +381,7 @@
         "limit_details_width": true,
         "gap": 0,
         "enable_sticky_add_to_cart": true,
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "padding-block-start": 0,
         "padding-block-end": 0
       }

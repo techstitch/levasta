@@ -15,8 +15,10 @@
   assign compare_at_price = selected_variant.compare_at_price
 
   assign show_compare_price = false
+  assign discount_percentage = 0
   if compare_at_price > price
     assign show_compare_price = true
+    assign discount_percentage = compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | round
   endif
 
   if product_resource == blank
@@ -85,6 +87,14 @@
       <span class="visually-hidden">{{ 'content.price_range' | t }}&nbsp;</span>
       <span class="price">{{ price_min }} - {{ price_max }}</span>
     </span>
+    {% if show_compare_price and discount_percentage > 0 %}
+      <span
+        class="price-discount-badge"
+        style="display: inline-flex; align-items: center; background-color: #cb2b2b; color: #fff; padding: 0.2em 0.5em; border-radius: 4px; font-size: 0.8em; margin-left: 8px; font-weight: bold; line-height: 1; vertical-align: middle;"
+      >
+        {{- discount_percentage }}% OFF</span
+      >
+    {% endif %}
   {% else %}
     {% comment %} Standard pricing display {% endcomment %}
     {% if show_sale_price_first == false and show_compare_price %}
@@ -108,6 +118,10 @@
         <span class="visually-hidden">{{ 'content.price_regular' | t }}&nbsp;</span>
         <span class="compare-at-price">{{- compare_at_price -}}</span>
       </span>
+    {% endif %}
+
+    {% if show_compare_price and discount_percentage > 0 %}
+      <span class="price-discount-badge">{{- discount_percentage }}% OFF</span>
     {% endif %}
   {% endif %}
   {%- if selected_variant.unit_price and show_unit_price %}
