@@ -11,6 +11,14 @@
     width: 100%;
 }
 
+.pdp-videos-carousel-wrapper {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: start;
+}
+
 .pdp-videos-carousel-video {
     display: flex;
     flex-direction: column;
