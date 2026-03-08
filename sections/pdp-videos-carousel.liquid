@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="{{ 'pdp-videos-carousel.css' | asset_url }}">
+{% schema %}
+{
+  "name": "Videos Carousel PDP",
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author Name"
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Testimonial Quote"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Videos Carousel PDP"
+    }
+  ]
+}
+{% endschema %}
