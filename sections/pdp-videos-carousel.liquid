@@ -4,7 +4,7 @@
   <div class="pdp-videos-carousel-wrapper">
     {% for block in section.blocks %}
       <div class="pdp-videos-carousel-video">
-        <video src="{{ block.settings.video_url | video_url }}"></video>
+        {{ block.settings.video_url | video_tag }}
         <p class="pdp-videos-carousel-content-heading">{{ block.settings.video_heading }}</p>
         <p class="pdp-videos-carousel-content-subheading">{{ block.settings.video_subheading }}</p>
       </div>
