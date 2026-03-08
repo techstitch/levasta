@@ -2866,13 +2866,14 @@ product-price.text-block:is(.h1, .h2, .h3, .h4, .h5, .h6)>*:not(.tax-note) {
   align-items: center;
   background-color: #1A3D7C;
   color: #fff;
-  padding: 0.2em 0.5em;
-  border-radius: 4px;
-  font-size: 0.8em;
-  margin-left: 8px;
-  font-weight: bold;
+  padding: 9px 15px;
+  border-radius: 8px;
+  font-size: .7rem;
+  margin-left: 3px;
+  font-weight: 600;
   line-height: 1;
   vertical-align: middle;
+  font-family: 'Inter';
 }
 
 @media screen and (max-width: 749px) {
