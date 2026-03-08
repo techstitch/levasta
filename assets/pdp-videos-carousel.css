@@ -1,6 +1,10 @@
 .pdp-videos-carousel-container {
     margin-top: 45px;
     margin-bottom: 25px;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .section-heading {
@@ -29,12 +33,16 @@
     padding-bottom: 50px;
     padding-left: 10px;
     padding-right: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .pdp-videos-carousel-video video {
     border-radius: 12px;
+    width: 100%;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .pdp-videos-carousel-content-heading {
