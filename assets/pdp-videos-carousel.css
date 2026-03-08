@@ -1,5 +1,6 @@
 .pdp-videos-carousel-container {
     margin-top: 45px;
+    margin-bottom: 25px;
 }
 
 .section-heading {
@@ -8,4 +9,14 @@
     font-weight: 600;
     text-align: center;
     width: 100%;
+}
+
+.pdp-videos-carousel-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+    font-family: 'Inter';
 }
