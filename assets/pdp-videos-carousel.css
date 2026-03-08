@@ -12,10 +12,6 @@
 }
 
 .pdp-videos-carousel-wrapper {
-    display: flex;
-    gap: 1%;
-    overflow-x: auto;
-    justify-content: start;
     align-items: start;
 }
 
@@ -24,13 +20,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 24.3%;
     text-align: center;
     font-family: 'Inter';
+    height: auto;
+}
+
+.pdp-videos-swiper {
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .pdp-videos-carousel-video video {
     border-radius: 12px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .pdp-videos-carousel-content-heading {
