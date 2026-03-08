@@ -64,6 +64,7 @@
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #1A3D7C !important;
     width: 12px;
+    opacity: 1;
     height: 12px;
 }
 
@@ -73,6 +74,7 @@
     border-radius: 50%;
     background-color: #1A3D7C;
     border: none;
+    opacity: 0.5;
     cursor: pointer;
     padding: 0;
     transition: background-color 0.3s ease, transform 0.3s ease;
