@@ -60,3 +60,22 @@
     font-weight: 400;
     width: 90%;
 }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff !important;
+    width: 12px;
+    height: 12px;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0;
+    flex-shrink: 0;
+}
