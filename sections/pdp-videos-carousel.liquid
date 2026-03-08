@@ -24,7 +24,7 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.pdp-videos-swiper', {
-      slidesPerView: 4,
+      slidesPerView: 1.5,
       spaceBetween: 15,
       navigation: {
         nextEl: '.swiper-button-next',
@@ -33,6 +33,16 @@
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2.5,
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
       },
     });
   });
