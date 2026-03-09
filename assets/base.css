@@ -2659,8 +2659,8 @@ product-price.text-block:is(.h1, .h2, .h3, .h4, .h5, .h6)>*:not(.tax-note) {
   opacity: 0.4;
   text-decoration-line: line-through;
   text-decoration-thickness: 1.5px;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: .8rem;
+  font-weight: 300;
   font-family: 'Inter';
 }
 
