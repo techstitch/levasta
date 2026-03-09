@@ -4609,6 +4609,9 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 
 .jdgm-prev-badge__text {
   color: #fff;
+  visibility: unset;
+  font-size: .8rem;
+  margin-left: 5px;
 }
 
 .layout-panel-flex--column>.group-block--height-fill {
