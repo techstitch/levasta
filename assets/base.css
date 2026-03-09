@@ -4594,7 +4594,7 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
 
 .product-card .buy-buttons-block {
   position: absolute;
-  bottom: 3%;
+  bottom: 16.5%;
   z-index: 2;
   right: 11px;
   border-radius: 50%;
@@ -4611,7 +4611,7 @@ slideshow-arrows .slideshow-control.slideshow-control--style-none {
   color: #fff;
   visibility: unset;
   font-size: .8rem;
-  margin-left: 5px;
+  margin-left: 5px !important;
 }
 
 .layout-panel-flex--column>.group-block--height-fill {
