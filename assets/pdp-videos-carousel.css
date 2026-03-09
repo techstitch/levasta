@@ -68,7 +68,7 @@
     height: 12px;
 }
 
-.slider-dot {
+.swiper-pagination-bullet {
     width: 10px;
     height: 10px;
     border-radius: 50%;
