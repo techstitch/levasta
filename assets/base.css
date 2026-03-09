@@ -156,8 +156,9 @@ select {
   min-height: unset;
 }
 
-.product-card__content {
-  cursor: pointer;
+.product-card__content product-price div:first-of-type {
+  display: flex;
+  gap: 10px;
 }
 
 .product-card__content slideshow-component {
