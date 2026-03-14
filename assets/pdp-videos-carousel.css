@@ -139,7 +139,7 @@
 
 .pdp-specifications-item {
     display: flex;
-    width: calc(50% - 30px);
+    width: 50%;
     justify-content: space-between;
     align-items: start;
     padding: 10px;
