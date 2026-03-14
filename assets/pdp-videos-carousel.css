@@ -141,7 +141,7 @@
 
 .pdp-specifications-item {
     display: flex;
-    width: 50%;
+    width: calc(50% - 30px);
     justify-content: space-between;
     align-items: start;
 }
