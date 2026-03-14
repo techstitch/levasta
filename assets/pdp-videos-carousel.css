@@ -130,6 +130,15 @@
     flex-shrink: 0;
 }
 
+.pdp-specifications-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 20px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
 .pdp-videos-carousel-container .swiper-pagination-bullet:hover {
     transform: scale(1.05);
 }
