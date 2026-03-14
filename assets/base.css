@@ -4866,6 +4866,7 @@ text-component {
   font-weight: 600;
   text-align: center;
   width: 100%;
+  margin-bottom: 24px;
 }
 
 .product-recommendations__skeleton-item {
