@@ -160,13 +160,11 @@
 .pdp-specifications-item:nth-of-type(4),
 .pdp-specifications-item:nth-of-type(5),
 .pdp-specifications-item:nth-of-type(8),
-.pdp-specifications-item:nth-of-type(1),
-.pdp-specifications-item:nth-of-type(1),
-.pdp-specifications-item:nth-of-type(1),
-.pdp-specifications-item:nth-of-type(1),
-.pdp-specifications-item:nth-of-type(1),
-.pdp-specifications-item:nth-of-type(1),
-.pdp-specifications-item:nth-of-type(1) {
+.pdp-specifications-item:nth-of-type(9),
+.pdp-specifications-item:nth-of-type(12),
+.pdp-specifications-item:nth-of-type(13),
+.pdp-specifications-item:nth-of-type(16),
+.pdp-specifications-item:nth-of-type(17) {
     background-color: #1A3D7C30;
 }
 
