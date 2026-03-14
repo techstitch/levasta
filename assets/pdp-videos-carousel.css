@@ -143,20 +143,23 @@
     justify-content: space-between;
     align-items: start;
     padding: 20px;
-    
+
 }
 
 .pdp-specifications-item p:first-of-type {
     margin: 0;
     font-weight: 700;
 }
+
 .pdp-specifications-item p:last-of-type {
     margin: 0;
     font-weight: 400;
 }
-.pdp-specifications-item:nth-child(even) {
+
+.pdp-specifications-item:nth-of-type(1) {
     background-color: #1A3D7C30;
 }
+
 .pdp-videos-carousel-container .swiper-pagination-bullet:hover {
     transform: scale(1.05);
 }
