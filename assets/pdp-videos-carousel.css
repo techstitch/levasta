@@ -61,23 +61,99 @@
     width: 90%;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: #1A3D7C !important;
-    width: 12px;
-    opacity: 1;
-    height: 12px;
+/* Slider Controls – match testimonials */
+.testimonials-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.slider-nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.slider-nav-btn:hover {
+    transform: scale(1.05);
+}
+
+.slider-nav-btn:active {
+    transform: scale(0.95);
+}
+
+.slider-arrow-icon {
+    width: 45px;
+    height: auto;
+    object-fit: contain;
+    background: #fff;
+    padding: 14px;
+    border-radius: 50%;
+}
+
+.slider-arrow-prev {
+    transform: rotate(180deg);
+}
+
+/* Swiper Pagination (Dots) – match testimonials */
+.swiper-pagination {
+    display: flex !important;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    position: static !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
 }
 
 .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #1A3D7C !important;
-    border: none;
-    opacity: 0.5;
+    background-color: transparent !important;
+    border: solid 1px #fff !important;
+    opacity: 1 !important;
     cursor: pointer;
-    padding: 0;
+    padding: 0 !important;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 0;
+    margin: 0 !important;
     flex-shrink: 0;
+}
+
+.swiper-pagination-bullet:hover {
+    transform: scale(1.05);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #fff !important;
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: fit-content !important;
+}
+
+@media (max-width: 768px) {
+    .testimonials-controls {
+        gap: 30px;
+    }
+
+    .slider-nav-btn {
+        padding: 6px;
+    }
+
+    .slider-arrow-icon {
+        width: 20px;
+        height: 20px;
+    }
 }
