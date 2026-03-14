@@ -14,38 +14,96 @@
       {% endfor %}
     </div>
 
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev" style="color: #111;"></div>
-    <div class="swiper-button-next" style="color: #111;"></div>
+    <div class="testimonials-controls pdp-videos-controls">
+      <button class="slider-nav-btn slider-nav-prev" id="pdp-videos-prev">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0961/8086/3276/files/Group_1000001558_1.png?v=1772141969"
+          alt="Previous"
+          class="slider-arrow-icon slider-arrow-prev"
+        >
+      </button>
+
+      <div class="swiper-pagination" id="pdp-videos-pagination"></div>
+
+      <button class="slider-nav-btn slider-nav-next" id="pdp-videos-next">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0961/8086/3276/files/Group_1000001558_1.png?v=1772141969"
+          alt="Next"
+          class="slider-arrow-icon"
+        >
+      </button>
+    </div>
   </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer="defer"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+  function initPdpVideosSwiper() {
+    if (typeof Swiper === 'undefined') {
+      setTimeout(initPdpVideosSwiper, 100);
+      return;
+    }
+
     const swiper = new Swiper('.pdp-videos-swiper', {
-      slidesPerView: 1.5,
-      spaceBetween: 15,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '#pdp-videos-next',
+        prevEl: '#pdp-videos-prev',
       },
+
       pagination: {
-        el: '.swiper-pagination',
+        el: '#pdp-videos-pagination',
         clickable: true,
+        dynamicBullets: false,
+        type: 'bullets',
       },
+
+      grabCursor: true,
+      touchRatio: 1.2,
+      touchAngle: 45,
+      simulateTouch: true,
+
+      speed: 500,
+      effect: 'slide',
+
+      momentum: true,
+      momentumBounce: true,
+      momentumVelocityRatio: 0.85,
+      momentumRatio: 1,
+      freeMode: false,
+
       breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
         768: {
-          slidesPerView: 2.5,
+          slidesPerView: 2,
           spaceBetween: 15,
         },
         1024: {
-          slidesPerView: 4,
+          slidesPerView: 3,
           spaceBetween: 20,
         },
       },
+
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
+
+      loop: false,
+      rewind: true,
     });
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPdpVideosSwiper);
+  } else {
+    initPdpVideosSwiper();
+  }
 </script>
 {% schema %}
 {
