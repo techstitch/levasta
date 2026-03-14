@@ -154,6 +154,9 @@
     margin: 0;
     font-weight: 400;
 }
+.pdp-specifications-item:nth-child(even) {
+    background-color: #1A3D7C;
+}
 .pdp-videos-carousel-container .swiper-pagination-bullet:hover {
     transform: scale(1.05);
 }
