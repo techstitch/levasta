@@ -146,6 +146,11 @@
     align-items: start;
 }
 
+.pdp-specifications-item p:first-of-type {
+    margin: 0;
+    font-weight: 700;
+}
+
 .pdp-videos-carousel-container .swiper-pagination-bullet:hover {
     transform: scale(1.05);
 }
