@@ -15,9 +15,9 @@
     <div class="swiper-wrapper pdp-videos-carousel-wrapper">
       {% for video in product.metafields.custom.product_speciification_videos.value %}
         <div class="swiper-slide pdp-videos-carousel-video">
-          {{ block.settings.video_url | video_tag: autoplay: true, loop: true, muted: true }}
-          <p class="pdp-videos-carousel-content-heading">{{ block.settings.video_heading }}</p>
-          <p class="pdp-videos-carousel-content-subheading">{{ block.settings.video_subheading }}</p>
+          {{ video.video | video_tag: autoplay: true, loop: true, muted: true }}
+          <p class="pdp-videos-carousel-content-heading">{{ video.title }}</p>
+          <p class="pdp-videos-carousel-content-subheading">{{ video.subtitle }}</p>
         </div>
       {% endfor %}
     </div>
