@@ -3,6 +3,14 @@
 
 <div class="section pdp-videos-carousel-container">
   <p class="section-heading">{{ section.settings.section_heading }}</p>
+  <div class="pdp-specifications-container">
+    {% for item in product.metafields.custom.product_specifications.value %}
+      <div class="pdp-specifications-item">
+        <p class="pdp-specifications-item-heading">{{ item.title }}</p>
+        <p class="pdp-specifications-item-value">{{ item.content }}</p>
+      </div>
+    {% endfor %}
+  </div>
   <div class="swiper pdp-videos-swiper">
     <div class="swiper-wrapper pdp-videos-carousel-wrapper">
       {% for block in section.blocks %}
