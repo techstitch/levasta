@@ -4860,6 +4860,14 @@ text-component {
   display: block;
 }
 
+.product-recommendations h6 {
+  font-family: 'Sora';
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
 .product-recommendations__skeleton-item {
   aspect-ratio: 3 / 4;
   background-color: var(--color-foreground);
