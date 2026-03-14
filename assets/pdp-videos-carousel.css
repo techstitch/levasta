@@ -166,6 +166,7 @@
 .pdp-specifications-item:nth-of-type(16),
 .pdp-specifications-item:nth-of-type(17) {
     background-color: #1A3D7C30;
+    transition: all 0.3s ease;
 }
 
 .pdp-specifications-item:nth-of-type(1):hover,
