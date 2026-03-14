@@ -15,7 +15,7 @@
     <div class="swiper-wrapper pdp-videos-carousel-wrapper">
       {% for video in product.metafields.custom.product_speciification_videos.value %}
         <div class="swiper-slide pdp-videos-carousel-video">
-          {{ video.video | video_tag: autoplay: true, loop: true, muted: true }}
+          {{ video.video.value | video_tag: autoplay: true, loop: true, muted: true }}
           <p class="pdp-videos-carousel-content-heading">{{ video.title }}</p>
           <p class="pdp-videos-carousel-content-subheading">{{ video.subtitle }}</p>
         </div>
