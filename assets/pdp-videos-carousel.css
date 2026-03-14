@@ -139,6 +139,13 @@
     flex-wrap: wrap;
 }
 
+.pdp-specifications-item {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: start;
+}
+
 .pdp-videos-carousel-container .swiper-pagination-bullet:hover {
     transform: scale(1.05);
 }
