@@ -146,7 +146,12 @@
     align-items: start;
     padding: 20px;
     cursor: pointer;
+    background-color: #fff;
     transition: all 0.3s ease;
+}
+
+.pdp-specifications-item:hover {
+    background-color: #1A3D7C50;
 }
 
 .pdp-specifications-item p:first-of-type {
