@@ -150,7 +150,10 @@
     margin: 0;
     font-weight: 700;
 }
-
+.pdp-specifications-item p:last-of-type {
+    margin: 0;
+    font-weight: 400;
+}
 .pdp-videos-carousel-container .swiper-pagination-bullet:hover {
     transform: scale(1.05);
 }
